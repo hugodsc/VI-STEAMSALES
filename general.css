@@ -1,0 +1,32 @@
+.icon-small {
+    width: 60px;
+    height: 60px;
+}
+
+.align-text-center {
+    text-align: center
+}
+
+.red { 
+    background-color: #f2dede;
+}
+
+.blue {
+    background-color: #d9edf7;
+}
+
+.green {
+    background-color: #dff0d8;
+}
+
+.small-row {
+    height: 100px;
+}
+
+.medium-row {
+    height: 400px;
+}
+
+.big-row {
+    height: 800px;
+}
