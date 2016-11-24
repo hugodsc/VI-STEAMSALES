@@ -1,13 +1,17 @@
+.margin-top {
+    margin-top: 15px;
+}
+
 .icon-small {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
 }
 
 .align-text-center {
     text-align: center
 }
 
-.red { 
+.red {
     background-color: #f2dede;
 }
 
@@ -20,7 +24,7 @@
 }
 
 .small-row {
-    height: 100px;
+    height: 75px;
 }
 
 .medium-row {

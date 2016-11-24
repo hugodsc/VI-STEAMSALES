@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Includes for several library files -->
     <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="lib/underscore-min.js"></script>
     <script type="text/javascript" src="lib/moment.js"></script>
-
+    <script type="text/javascript" src="lib/dragula/dragula.min.js"></script>
+    <link href="lib/dragula/dragula.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="lib/interact.min.js"></script> -->
     <!-- Includes for Bootstrap files -->
     <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
     <!-- Includes for JSON files -->
-    <script type="text/javascript" src="parse_data.js"></script>
+    <script type="text/javascript" src="js/parse_data.js"></script>
+    <script type="text/javascript" src="js/line_chart_player_hitoric.js"></script>
+    <script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
+    <script type="text/javascript" src="js/parse_data.js"></script>
     <script type="text/javascript" src="input/players_historic_CSGO.js"></script>
     <script type="text/javascript" src="input/players_historic_TheWitcher3.js"></script>
     <script type="text/javascript" src="input/price_historic_CSGO.js"></script>
     <script type="text/javascript" src="input/price_historic_TheWitcher3.js"></script>
-
     <!-- Includes for general purpose style files -->
-    <link href="general.css" rel="stylesheet">
-
+    <link href="css/general.css" rel="stylesheet">
+    <!-- Includes for D3 files -->
+    <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+    <link href="css/line_chart.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container-fluid">
-		<h1>VI 2016</h1>
+    <div class="container-fluid margin-top">
+        <!-- <h1>VI 2016</h1> -->
         <div class="row">
             <div class="col-md-4">
-                
-                    <div class="panel panel-default small-row red">
-                        <div class="panel-body align-text-center">
-                            <span>
-							RATINGS | PRICES | PLAYERS
-						</span>
-                        </div>
+                <div class="panel panel-default small-row red">
+                    <div class="panel-body align-text-center">
+                        <span>RATINGS | PRICES | PLAYERS</span>
                     </div>
-                
-                    <div class="panel panel-default medium-row green">
-                        <div class="panel-body align-text-center">
-                            <span>
-						TAG CLOUD
-						</span>
-                        </div>
+                </div>
+                <div class="panel panel-default medium-row green">
+                    <div class="panel-body align-text-center" id="game-db">
+                        <img src="images/placeholder_gta.png" class="img-circle icon-small">
+                        <img src="images/placeholder_hotlinemiami.png" class="img-circle icon-small">
+                        <img src="images/placeholder_thewitcher3.png" class="img-circle icon-small">
                     </div>
-                
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body small-row blue">
-                        <div>
-                            <img src="images/placeholder_csgo.png" class="img-circle icon-small">
-                        </div>
+                </div>
+                <div class="panel panel-default medium-row blue">
+                    <div class="panel-body align-text-center">
+                        <span>TAG CLOUD</span>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel-body medium-row green">
-                    <div>
+                <div class="panel panel-default">
+                    <div class="panel-body small-row blue" id="game-selection">
+                        <img src="images/placeholder_csgo.png" class="img-circle icon-small">
+                    </div>
+                </div>
+                <div class="panel panel-default medium-row red">
+                    <div class="panel-body align-text-center">
+                        <span>GRAPH_1</span>
+                    </div>
+                </div>
+                <div class="panel panel-default medium-row green">
+                    <div class="panel-body align-text-center">
+                        <span>GRAPH_2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body small-row green">
+                        <div>
+                            <img src="images/placeholder_csgo.png" class="img-circle icon-small">
+                            <span>Game Title</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default medium-row blue">
+                    <div class="panel-body align-text-center">
+                        <span>GAME DESCRIPTION</span>
+                    </div>
+                </div>
+                <div class="panel panel-default medium-row red">
+                    <div class="panel-body align-text-center">
+                        <span>MAP</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="line_chart">
+        <svg id="visualisation" width="1000" height="500"></svg>
+    </div>
+    <div id="line_chart_price">
+        <svg id="visualisation_price" width="1000" height="500"></svg>
+    </div>
 </body>
-
 </html>
