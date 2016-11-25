@@ -2,7 +2,22 @@
     margin-top: 15px;
 }
 
-.icon-small {
+.icon-db {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-db img {
+    width: 90px;
+    height: 90px;
+}
+
+.icon-selection {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-selection img {
     width: 45px;
     height: 45px;
 }

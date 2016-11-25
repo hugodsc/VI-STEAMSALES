@@ -8,8 +8,12 @@
     <script type="text/javascript" src="lib/underscore-min.js"></script>
     <script type="text/javascript" src="lib/moment.js"></script>
     <script type="text/javascript" src="lib/dragula/dragula.min.js"></script>
+    <script src="lib/dragula/dragula.min.js" type="text/javascript"></script>
     <link href="lib/dragula/dragula.css" rel="stylesheet">
-    <!-- <script type="text/javascript" src="lib/interact.min.js"></script> -->
+    <!-- Includes for jQuery UI -->
+    <link rel="stylesheet" href="lib/jqueryui/jquery-ui.min.css">
+    <script src="lib/jqueryui/external/jquery/jquery.js"></script>
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
     <!-- Includes for Bootstrap files -->
     <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -17,7 +21,7 @@
     <script type="text/javascript" src="js/parse_data.js"></script>
     <script type="text/javascript" src="js/line_chart_player_hitoric.js"></script>
     <script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
-    <script type="text/javascript" src="js/parse_data.js"></script>
+    <script type="text/javascript" src="js/interaction.js"></script>
     <script type="text/javascript" src="input/players_historic_CSGO.js"></script>
     <script type="text/javascript" src="input/players_historic_TheWitcher3.js"></script>
     <script type="text/javascript" src="input/price_historic_CSGO.js"></script>
@@ -39,10 +43,16 @@
                     </div>
                 </div>
                 <div class="panel panel-default medium-row green">
-                    <div class="panel-body align-text-center" id="game-db">
-                        <img src="images/placeholder_gta.png" class="img-circle icon-small">
-                        <img src="images/placeholder_hotlinemiami.png" class="img-circle icon-small">
-                        <img src="images/placeholder_thewitcher3.png" class="img-circle icon-small">
+                    <div class="panel-body" id="game-db">
+                        <div class="icon-db">
+                            <img src="images/placeholder_gta.png" class="img-circle">
+                        </div>
+                        <div class="icon-db">
+                            <img src="images/placeholder_hotlinemiami.png" class="img-circle">
+                        </div>
+                        <div class="icon-db">
+                            <img src="images/placeholder_thewitcher3.png" class="img-circle">
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-default medium-row blue">
@@ -54,7 +64,9 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body small-row blue" id="game-selection">
-                        <img src="images/placeholder_csgo.png" class="img-circle icon-small">
+                        <div class="icon-selection">
+                            <img src="images/placeholder_csgo.png" class="img-circle">
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-default medium-row red">
@@ -72,8 +84,10 @@
                 <div class="panel panel-default">
                     <div class="panel-body small-row green">
                         <div>
-                            <img src="images/placeholder_csgo.png" class="img-circle icon-small">
-                            <span>Game Title</span>
+                            <div class="icon-selection">
+                                <img src="images/placeholder_csgo.png" class="img-circle">
+                                <span>Game Title</span>
+                            </div>
                         </div>
                     </div>
                 </div>
