@@ -1,7 +1,6 @@
 $(document).ready(function() {
-    //Daily not yet parsed
-    csgo.parsed_data    = parse_json(csgo.players,      csgo.price);
-    witcher3.parse_data  = parse_json(witcher3.players,   witcher3.price);
+    csgo.parsed_data = parse_json(csgo.players, csgo.price);
+    witcher3.parse_data = parse_json(witcher3.players, witcher3.price);
 
     //Debug only, to be executed by DOM events
     line_chart(csgo.parsed_data, witcher3.parse_data);
