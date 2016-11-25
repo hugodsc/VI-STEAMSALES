@@ -1,4 +1,4 @@
-var price_historic_CSGO = 
+csgo.price =
 {
     "success": true,
     "data": {

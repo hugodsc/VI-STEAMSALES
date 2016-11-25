@@ -1,10 +1,11 @@
 $(document).ready(function() {
-    var csgo = parse_json(player_historic_CSGO, price_historic_CSGO);
-    var witcher = parse_json(player_historic_TheWitcher3, price_historic_TheWitcher3);
+    //Daily not yet parsed
+    csgo.parsed_data    = parse_json(csgo.players,      csgo.price);
+    witcher3.parse_data  = parse_json(witcher3.players,   witcher3.price);
 
     //Debug only, to be executed by DOM events
-    line_chart(csgo, witcher);
-    line_chart_price(csgo, witcher);
+    line_chart(csgo.parsed_data, witcher3.parse_data);
+    line_chart_price(csgo.parsed_data, witcher3.parse_data);
 });
 
 function parse_json(input_historic, input_price) {
@@ -30,22 +31,6 @@ function parse_json(input_historic, input_price) {
             player_historic_filtered.data[j].price = currentPrice
         }
     }
-    /*
-    _.each(input_price.data.final, function(e) { 
-        e[0] = moment(e[0]).format("DD-MM-YY");
-        var elm = 
-        _.find(player_historic_filtered.data, 
-            function(num, i){ 
-               if(e[0] == num.date) {
-                    num.price = e[1];
-               }
-               
-            }
-        );
-        
-        }, player_historic_filtered
-    );
-    */
     return player_historic_filtered;
 }
 

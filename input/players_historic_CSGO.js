@@ -1,4 +1,4 @@
-var player_historic_CSGO = 
+csgo.players =
 {
     "start": 1413504000,
     "end": 1476662400,

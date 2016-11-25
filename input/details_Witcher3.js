@@ -1,5 +1,7 @@
+var witcher3 = 
 {
-	"292030": {
+	"details": {
+		"id": 292030,
 		"success": true,
 		"data": {
 			"type": "game",

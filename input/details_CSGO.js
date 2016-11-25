@@ -1,5 +1,7 @@
+var csgo = 
 {
-	"730": {
+	"details": {
+		"id": 730,
 		"success": true,
 		"data": {
 			"type": "game",
