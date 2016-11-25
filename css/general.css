@@ -2,22 +2,27 @@
     margin-top: 15px;
 }
 
-.icon-db {
+#game-db div {
     display: inline-block;
     margin-right: 10px;
 }
 
-.icon-db img {
+#game-db div img {
     width: 90px;
     height: 90px;
 }
 
-.icon-selection {
+#game-selection div {
     display: inline-block;
     margin-right: 10px;
 }
 
-.icon-selection img {
+#game-selection div img {
+    width: 45px;
+    height: 45px;
+}
+
+#game-selected-header img {
     width: 45px;
     height: 45px;
 }

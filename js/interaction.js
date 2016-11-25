@@ -30,8 +30,14 @@ window.onload = function() {
         // set the element that gets mirror elements appended
         ignoreInputTextSelection: true // allows users to select input text, see details below
     }).on('drop', function(el, target, source, sibling) {
-        if(isGameSelection(target.id)) $(el).switchClass("icon-db", "icon-selection", 1000, "easeInOutQuad");
-        else if(isGameDB(target.id)) $(el).switchClass("icon-selection", "icon-db", 1000, "easeInOutQuad");
+        //if(isGameSelection(target.id)) $(el).switchClass("icon-db", "icon-selection", 1000, "easeInOutQuad");
+        //else if(isGameDB(target.id)) $(el).switchClass("icon-selection", "icon-db", 1000, "easeInOutQuad");
+
+        //Selection panel
+        if(isGameSelection(target.id)) $(el).switchClass("slideRightReturn", "magictime slideRightReturn");
+        //Database Panel
+        else if(isGameDB(target.id)) $(el).switchClass("slideRightReturn", "magictime slideRightReturn");
+        
     }).on('over', function(el, container) {
         container.className += ' ex-over';
     }).on('out', function(el, container) {

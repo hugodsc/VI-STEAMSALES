@@ -28,6 +28,7 @@
     <script type="text/javascript" src="input/price_historic_TheWitcher3.js"></script>
     <!-- Includes for general purpose style files -->
     <link href="css/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/magic-master/magic.css">
     <!-- Includes for D3 files -->
     <script src="lib/d3.v3.min.js" charset="utf-8"></script>
     <link href="css/line_chart.css" rel="stylesheet">
@@ -44,13 +45,13 @@
                 </div>
                 <div class="panel panel-default medium-row green">
                     <div class="panel-body" id="game-db">
-                        <div class="icon-db">
+                        <div class="magictime slideRightReturn">
                             <img src="images/placeholder_gta.png" class="img-circle">
                         </div>
-                        <div class="icon-db">
+                        <div class="magictime slideRightReturn">
                             <img src="images/placeholder_hotlinemiami.png" class="img-circle">
                         </div>
-                        <div class="icon-db">
+                        <div class="magictime slideRightReturn">
                             <img src="images/placeholder_thewitcher3.png" class="img-circle">
                         </div>
                     </div>
@@ -64,7 +65,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body small-row blue" id="game-selection">
-                        <div class="icon-selection">
+                        <div class="magictime slideRightReturn">
                             <img src="images/placeholder_csgo.png" class="img-circle">
                         </div>
                     </div>
@@ -83,11 +84,9 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body small-row green">
-                        <div>
-                            <div class="icon-selection">
-                                <img src="images/placeholder_csgo.png" class="img-circle">
-                                <span>Game Title</span>
-                            </div>
+                        <div id="game-selected-header">
+                            <img src="images/placeholder_csgo.png" class="img-circle">
+                            <span>Game Title</span>
                         </div>
                     </div>
                 </div>
