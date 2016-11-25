@@ -29,27 +29,32 @@ window.onload = function() {
         mirrorContainer: document.body,
         // set the element that gets mirror elements appended
         ignoreInputTextSelection: true // allows users to select input text, see details below
-    }).on('drop', function(el, target, source, sibling) {
-        //if(isGameSelection(target.id)) $(el).switchClass("icon-db", "icon-selection", 1000, "easeInOutQuad");
-        //else if(isGameDB(target.id)) $(el).switchClass("icon-selection", "icon-db", 1000, "easeInOutQuad");
-
-        //Selection panel
-        if(isGameSelection(target.id)) $(el).addClass("magictime slideRightReturn");
-        //Database Panel
-        else if(isGameDB(target.id)) $(el).addClass("magictime slideRightReturn");
-        
-    }).on('over', function(el, container) {
-        container.className += ' ex-over';
-    }).on('out', function(el, container) {
-        container.className = container.className.replace('ex-over', '');
+    }).on('drag', function(el, source) {
+        $(el).addClass('icon-holding');
+        $(el).removeClass('magictime');
+    }).on('dragend', function(el) {
+        $(el).addClass('icon-holding');
+        $(el).addClass("magictime slideRightReturn");
+        console.log('drag end');
     });
-    ;
-}
 
+    $("#game-selection").click(function() {
+        var header = $('#game-selected-header');
+        var description = $('#game-selected-description');
+        
+        //remove all children
+        header.empty();
+        description.empty();
+        //load header
+        header.append('<img src="images/placeholder_gta.png" class="img-circle"><span>GTA</span>');
+        //load description
+        description.append('<span>gta game description</span>');
+    });
+
+}
 function isGameSelection(id) {
     return id == "game-selection" ? true : false;
 }
-
 function isGameDB(id) {
     return id == "game-db" ? true : false;
 }

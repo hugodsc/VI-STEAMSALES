@@ -27,6 +27,11 @@
     height: 45px;
 }
 
+.icon-holding img {
+    width: 200px;
+    height: 200px;
+}
+
 .align-text-center {
     text-align: center
 }
