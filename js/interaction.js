@@ -34,9 +34,9 @@ window.onload = function() {
         //else if(isGameDB(target.id)) $(el).switchClass("icon-selection", "icon-db", 1000, "easeInOutQuad");
 
         //Selection panel
-        if(isGameSelection(target.id)) $(el).switchClass("slideRightReturn", "magictime slideRightReturn");
+        if(isGameSelection(target.id)) $(el).addClass("magictime slideRightReturn");
         //Database Panel
-        else if(isGameDB(target.id)) $(el).switchClass("slideRightReturn", "magictime slideRightReturn");
+        else if(isGameDB(target.id)) $(el).addClass("magictime slideRightReturn");
         
     }).on('over', function(el, container) {
         container.className += ' ex-over';
