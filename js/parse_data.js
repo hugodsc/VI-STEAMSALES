@@ -3,9 +3,9 @@ $(document).ready(function() {
     witcher3.parse_data = parse_json(witcher3.players, witcher3.price);
 
     //Debug only, to be executed by DOM events
-    line_chart(csgo.parsed_data, witcher3.parse_data);
-    line_chart_price(csgo.parsed_data, witcher3.parse_data);
-    map_chart(csgo.details,witcher3.details)
+    line_chart(csgo.parsed_data,'blue', witcher3.parse_data, 'yellow');
+    line_chart_price(csgo.parsed_data,'red', witcher3.parse_data, 'black');
+    map_chart(/*csgo.details,*/witcher3.details)
 });
 
 function parse_json(input_historic, input_price) {
