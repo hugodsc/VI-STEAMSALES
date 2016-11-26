@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="lib/magic-master/magic.css">
     <link rel="stylesheet" href="css/line_chart.css">
+	<link href="d3-geomap/css/d3.geomap.css" rel="stylesheet">
 </head>
 <body>
     <div class='liveExample'>
@@ -99,6 +100,7 @@
     <div id="line_chart_price">
         <svg id="visualisation_price" width="1000" height="500"></svg>
     </div>
+	<div id="map"></div>
 </body>
 <!-- Libraries used -->
 <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
@@ -110,6 +112,8 @@
 <script type="text/javascript" src="lib/jqueryui/external/jquery/jquery.js"></script>
 <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
 <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+<script src="d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+<script src="d3-geomap/js/d3.geomap.min.js"></script>
 <!-- Includes for custom JS -->
 <!-- Parser -->
 <script type="text/javascript" src="js/parse_data.js"></script>
@@ -126,10 +130,11 @@
 <script type="text/javascript" src="input/players_historic_Witcher3.js"></script>
 
 
-
 <!-- D3 graphics -->
 <script type="text/javascript" src="js/line_chart_player_hitoric.js"></script>
 <script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
+<script type="text/javascript" src="js/map_chart.js"></script>
+
 <!-- CUstom Interaction -->
 <script type="text/javascript" src="js/interaction_ko.js"></script>
 </html>
