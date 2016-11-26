@@ -27,7 +27,7 @@
 				"Boll AG"
 			],
 			"country": [
-				"Germany"
+				"Germany","DEU"
 			],
 			"price_overview": {
 				"currency": "EUR",

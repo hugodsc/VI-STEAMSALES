@@ -27,7 +27,7 @@
 				"Wild Games Studio"
 			],
 			"country": [
-				"Canada"
+				"Canada","CAN"
 			],
 			"price_overview": {
 				"currency": "EUR",

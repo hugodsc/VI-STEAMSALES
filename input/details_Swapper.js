@@ -31,7 +31,7 @@
 				"Facepalm Games"
 			],
 			"country": [
-				"Finland"
+				"Finland","FIN"
 			],
 			"price_overview": {
 				"currency": "EUR",

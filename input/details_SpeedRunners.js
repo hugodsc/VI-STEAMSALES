@@ -35,7 +35,7 @@
 				"tinyBuild"
 			],
 			"country": [
-				"Netherlands"
+				"Netherlands","NLD"
 			],
 			"demos": [
 				{

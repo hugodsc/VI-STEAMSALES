@@ -29,7 +29,7 @@
 				"22cans Ltd."
 			],
 			"country": [
-				"UK"
+				"United Kingdom","GBR"
 			],
 			"packages": [
 				86356

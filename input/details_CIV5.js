@@ -51,7 +51,7 @@
 				"Aspyr (Mac, Linux)"
 			],
 			"country": [
-				"USA"
+				"United States of America","USA"
 			],
 			"demos": [
 				{

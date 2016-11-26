@@ -46,7 +46,7 @@
 				"SEGA"
 			],
 			"country": [
-				"UK"
+				"UNited Kingdom","GBR"
 			],
 			"demos": [
 				{

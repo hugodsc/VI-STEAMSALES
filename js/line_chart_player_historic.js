@@ -1,5 +1,6 @@
 function line_chart_players() {
-    if(arguments.length == 0) return;
+    if (arguments.length == 0)
+        return;
     var vis = d3.select("#visualisation_players")
       , WIDTH = $("#visualisation_players").width()
       , HEIGHT = $("#visualisation_players").height() - 15
@@ -9,12 +10,11 @@ function line_chart_players() {
         bottom: 5,
         left: 55
     }
-
     var maxPlayers = arguments[0].data[0].players
       , maxDate = parseDate(arguments[0].data[0].date)
       , minDate = parseDate(arguments[0].data[0].date)
       , minPlayers = arguments[0].data[0].players
-    for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
+    for (var argsCounter = 0; argsCounter < arguments.length; argsCounter++) {
         for (var i = 0; i < arguments[argsCounter].data.length; i++) {
             if (arguments[argsCounter].data[i].players > maxPlayers) {
                 maxPlayers = arguments[argsCounter].data[i].players
@@ -31,13 +31,11 @@ function line_chart_players() {
             }
         }
         argsCounter++
-    } 
-
+    }
     xScale = d3.time.scale().range([MARGINS.left, WIDTH - MARGINS.right]).domain([minDate, maxDate])
     yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([minPlayers, maxPlayers])
     xAxis = d3.svg.axis().scale(xScale),
     yAxis = d3.svg.axis().scale(yScale).orient("left");
-    d3.selectAll("#visualisation_players svg > *").remove();
     vis.append("svg:g").attr("class", "axis").attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")").call(xAxis);
     vis.append("svg:g").attr("class", "axis").attr("transform", "translate(" + (MARGINS.left) + ",0)").call(yAxis);
     var lineGen = d3.svg.line().x(function(d) {
@@ -45,10 +43,8 @@ function line_chart_players() {
     }).y(function(d) {
         return yScale(d.players);
     }).interpolate("basis");
-    for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
-        vis.append('svg:path').attr('d', lineGen(arguments[argsCounter].data)).attr('stroke', arguments[argsCounter+1]).attr('stroke-width', 2).attr('fill', 'none');
+    for (var argsCounter = 0; argsCounter < arguments.length; argsCounter++) {
+        vis.append('svg:path').attr('d', lineGen(arguments[argsCounter].data)).attr('stroke', arguments[argsCounter + 1]).attr('stroke-width', 2).attr('fill', 'none');
         argsCounter++;
     }
 }
-
-
