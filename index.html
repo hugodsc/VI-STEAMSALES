@@ -43,7 +43,7 @@
                         <!-- /ko -->
                         <!-- ko foreach: selection -->
                         <div class="magictime vanishIn">
-                            <img data-bind="attr:{src:details.data.header_image}"/>
+                            <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.colors[$index()]}"/>
                         </div>
                         <!-- /ko -->
                     </div>
@@ -51,17 +51,27 @@
                 <div class="panel panel-default medium-row red">
                     <div class="panel-heading">Players over time</div>
                     <div class="panel-body align-text-center">
+                        <!-- ko if: selection().length < 1 -->
+                        <img src="images/graph_zone.png"/>
+                        <!-- /ko -->
+                        <!-- ko ifnot: selection().length < 1 -->
                         <div class="line_chart">
                             <svg id="visualisation_players"></svg>
                         </div>
+                        <!-- /ko -->
                     </div>
                 </div>
                 <div class="panel panel-default medium-row green">
                     <div class="panel-heading">Price over time</div>
                     <div class="panel-body align-text-center">
+                        <!-- ko if: selection().length < 1 -->
+                        <img src="images/graph_zone.png"/>
+                        <!-- /ko -->
+                        <!-- ko ifnot: selection().length < 1 -->
                         <div class="line_chart">
                             <svg id="visualisation_price"></svg>
                         </div>
+                        <!-- /ko -->
                     </div>
                 </div>
             </div>

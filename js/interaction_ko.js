@@ -4,7 +4,7 @@ function interactVmImplement() {
     self.db = ko.observableArray();
     self.selection = ko.observableArray();
     self.selected = ko.observable();
-    self.colors = ['#dff0d8', '#d9edf7', '#f2dede', '#e7def2', '#dbf59c', '#f1ea97'];
+    self.colors = ['red', 'black', 'blue', 'yellow', 'green', 'orange'];
     //Populate db
     self.db.push(csgo);
     self.db.push(witcher3);
@@ -15,6 +15,9 @@ function interactVmImplement() {
     self.db.valueHasMutated();
     //Util
     self.editingId = ko.observable();
+    self.getIndex = function(index) {
+        return index();
+    }
 }
 ;vm = new interactVmImplement();
 ko.applyBindings(vm);
@@ -113,4 +116,10 @@ function isGameSelection(elm) {
 }
 function isGameDB(elm) {
     return elm.id == "game-db" ? true : false;
+}
+
+function debugeer(arg1, arg2, arg3) {
+    console.log('debug');
+
+    //data-bind="style: { backgroundColor: debugeer()}"
 }

@@ -79,3 +79,9 @@ body {
 #game-selected-header span {
    font-weight: bold;
 }
+
+/* Selection Zone */
+.selection-icon {
+    border: 3px;
+    border-style: solid;
+}
