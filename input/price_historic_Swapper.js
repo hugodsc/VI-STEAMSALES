@@ -1,4 +1,4 @@
-{
+swapper.price={
     "success": true,
     "data": {
         "formatted": {

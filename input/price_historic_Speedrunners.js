@@ -1,4 +1,4 @@
-{
+speedrunners.price={
     "success": true,
     "data": {
         "formatted": {

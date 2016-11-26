@@ -1,5 +1,7 @@
+var drugwars =
 {
-	"26300": {
+	"details": {
+		"id":26300,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -11,7 +13,7 @@
 			"about_the_game": "<p>Drug Wars is a gritty, gory romp through a futuristic New York City, circa 3100, where severe global warming conditions have resulted in a harsh divide between upper-class Brooklyn gang bosses and a booming population of engineered Neanderthal bottom-dwellers.</p>\n                    <p>Using the powerful Crytek 2 Engine, Paleo Entertainment offers players of Drug Wars a collection of varied maps rife for fast-paced multiplayer chaos, featuring a deadly variety of weapons, including everything from a biomechanical arm to environmental objects - including the severed limbs of your foes - to gain control of the coveted drug trade. Add in several brand-new vehicles to both traverse across the detailed landscapes and mow down your opponents, and Drug Wars offers up a slew of game options to keep players addicted to the bloody fun.</p>",
 			"short_description": "",
 			"supported_languages": "English",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/26300/header.jpg?t=1447351710",
+			"header_image": "images/drugwars2.png",
 			"website": "http://www.paleoent.com",
 			"pc_requirements": {
 				"minimum": "<ul>                    \n\t\t\t\t\t<li><strong>OS:</strong> XP/Vista</li>                    \n\t\t\t\t\t<li><strong>Processor:</strong> Core Duo</li>                    \n\t\t\t\t\t<li><strong>Memory:</strong> 2 GB RAM</li>                    \n\t\t\t\t\t<li><strong>Graphics:</strong> NVIDIA GeForce 6800 GT, ATI Radeon 9800 Pro (Radeon X800 Pro for Vista) or better</li>                    \n\t\t\t\t\t<li><strong>DirectX®:</strong> Direct X 9 </li>                    \n\t\t\t\t\t<li><strong>Hard Drive:</strong> 900 MB Free Space</li>                    \n\t\t\t\t\t<li><strong>Sound:</strong> DirectX 9.0c Compatible</li>                    </ul>"

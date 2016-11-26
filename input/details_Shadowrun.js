@@ -1,5 +1,6 @@
-{
-	"234650": {
+var shadowrun={
+	"details": {
+		"id":234650,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -12,7 +13,7 @@
 			"short_description": "The unique cyberpunk-meets-fantasy world of Shadowrun has gained a huge cult following since its creation nearly 25 years ago. Now, creator Jordan Weisman returns to the world of Shadowrun, modernizing this classic game setting as a single player, turn-based tactical RPG. In the urban sprawl of the Seattle metroplex, the search for a mysterious killer sets you on a trail that leads from the darkest slums to the city’s most powerful megacorps. You will need to tread carefully, enlist the aid of other runners, and master powerful forces of technology and magic in order to emerge from the shadows of Seattle unscathed.",
 			"supported_languages": "English, French, Italian, Spanish, German, Russian",
 			"reviews": "“Diehard GameFAN: 2013 Game of the Year/Best PC Game/Best Digital-Downloadable Game/Best Tactical RPG, Softpedia: Best RPG 2013, Hardcoregamer: Nominated Best Strategy Game 2013, Gamezebo: Best Games of 2013, Gamasutra: Top Games of the 2013”\r<br><a href=\"https://steamcommunity.com/linkfilter/?url=http://diehardgamefan.com/2014/01/06/diehard-gamefans-2013-video-game-awards/\" target=\"_blank\" rel=\"noreferrer\"  >Best of 2013 Awards</a>\r<br>\r<br>“Shadowrun Returns drops players headfirst into this richly realized fiction, combining classic role-playing storytelling with modern tactical battles . . . running the shadows has never been more fun.”\r<br>8.5/10 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gameinformer.com/games/shadowrun_returns/b/pc/archive/2013/07/25/modern-gameplay-with-a-classic-feel.aspx\" target=\"_blank\" rel=\"noreferrer\"  >Game Informer</a>\r<br>\r<br>“This is one of the most satisfying and complete tactical roleplaying experiences to come out of 2013 and realistically the last few years.”\r<br>4.5/5 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.hardcoregamer.com/2013/07/24/review-shadowrun-returns/\" target=\"_blank\" rel=\"noreferrer\"  >HardcoreGamer</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/234650/header.jpg?t=1466786598",
+			"header_image": "images/shadowrun.png",
 			"website": "http://harebrained-schemes.com/shadowrun/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong>Windows XP SP3/Vista/Windows 7\r<br>\t</li><li><strong>Processor:</strong> x86-compatible 1.4GHz or faster processor\r<br>\t</li><li><strong>Memory:</strong>2 GB RAM\r<br>\t</li><li><strong>Graphics:</strong>DirectX compatible 3D graphics card with at least 256MB of addressable memory\r<br>\t</li><li><strong>DirectX®:</strong>9.0\r<br>\t</li><li><strong>Hard Drive:</strong>2 GB HD space\r</li></ul>"

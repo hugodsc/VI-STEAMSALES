@@ -1,4 +1,4 @@
-{
+infestation.price={
     "success": true,
     "data": {
         "formatted": {

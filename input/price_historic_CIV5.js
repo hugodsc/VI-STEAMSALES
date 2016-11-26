@@ -1,4 +1,4 @@
-{
+civ5.price= {
     "success": true,
     "data": {
         "formatted": {

@@ -1,5 +1,6 @@
-{
-	"231160": {
+var swapper={
+	"details": {
+		"id":231160,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -13,7 +14,7 @@
 			"short_description": "What if someone knew your mind better than you did?<br />\r\nThe Swapper is an award-winning, narrative driven puzzle game set in the furthest reaches of space.",
 			"supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
 			"reviews": "“I came away from The Swapper with nothing but amazement. From the first time you see the literally hand-crafted visuals until the final moment in the game, which is sure to give you pause for thought, you will be in complete awe. \r<br>\r<br>Brilliant puzzles with even more brilliant solutions compliment the philosophical plotline, leaving an unforgettable experience unlike any other.”\r<br>10/10 – <a href=\"http://www.destructoid.com/review-the-swapper-254540.phtml\" target=\"_blank\" rel=\"noreferrer\"  >Destructoid</a>\r<br>\r<br>“The Swapper tempted me with ingenious puzzles, transported me to a fully realized science-fiction world, and made me ask questions about mortality and morality that few video games have ever dared to explore. \r<br>\r<br>Very few puzzle games have ever managed to marry impeccable challenges with a mature storytelling quite like this – there's no fluff or extraneous content here, only a prime example of how to create a tight, unforgettable gaming experience.”\r<br>9.3 – <a href=\"http://uk.ign.com/articles/2013/06/01/the-swapper-review\" target=\"_blank\" rel=\"noreferrer\"  >IGN</a>\r<br>\r<br>“It didn’t take me long to fall in love with The Swapper; it continuously surprised and impressed me from its intriguing first moments to its fantastic ending.”\r<br>9.25 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gameinformer.com/games/the_swapper/b/pc/archive/2013/05/30/review.aspx\" target=\"_blank\" rel=\"noreferrer\"  >Game Informer</a>\r<br>\r<br>“Think, rethink. Get stumped. Take a break. Go outside. Have some ice crea- wait, no. Pet a dog. Or maybe go for a stroll in the park, because that would- Oh god, now Swapper’s thought process has invaded your mind. You can’t escape.”\r<br>– <a href=\"http://www.rockpapershotgun.com/2013/05/31/wot-i-think-the-swapper\" target=\"_blank\" rel=\"noreferrer\"  >Rock, Paper, Shotgun</a>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/231160/header.jpg?t=1451047906",
+			"header_image": "images/swapper.png",
 			"website": "http://facepalmgames.com/the-swapper",
 			"pc_requirements": {
 				"minimum": "<ul class=\"bb_ul\"><li><strong>OS:</strong>Windows XP SP3 or later, 64/32bit\r<br>\t</li><li><strong>Processor:</strong>Dual Core CPU (2.2+ GHz Dual Core CPU or better)\r<br>\t</li><li><strong>Memory:</strong>1 GB RAM\r<br>\t</li><li><strong>Graphics:</strong>GeForce® 8800 or Radeon® HD4800 series, 512 MB of memory,  OpenGL 3.0 support required\r<br>\t</li><li><strong>Hard Drive:</strong>1 GB HD space\r<br>\t</li><li><strong>Additional:</strong>Intel HD Graphics are not officially supported. But if you've got yourself a 3000 or better then there is a reasonable chance it will mostly/sorta work. No promises, but we've been working hard on it, at any rate.\r</li></ul>"

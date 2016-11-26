@@ -1,4 +1,4 @@
-{
+nomansky.price={
     "success": true,
     "data": {
         "formatted": {

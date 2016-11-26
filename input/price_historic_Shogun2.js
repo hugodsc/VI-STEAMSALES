@@ -1,4 +1,4 @@
-{
+shogun2.price={
     "success": true,
     "data": {
         "formatted": {

@@ -1,4 +1,4 @@
-{
+day1.price={
     "success": true,
     "data": {
         "formatted": {

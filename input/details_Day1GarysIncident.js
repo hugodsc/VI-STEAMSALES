@@ -1,5 +1,6 @@
-{
-	"242800": {
+var day1={
+	"details": {
+		"id": 242800,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -12,7 +13,7 @@
 			"short_description": "",
 			"supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
 			"reviews": "“Day One: Garry’s Incident brings its own undeniable charm with the main character being an alcoholic slob”\r<br><a href=\"http://kotaku.com/of-course-this-wonky-game-featuring-a-sloppy-drunk-dude-1441154655\" target=\"_blank\" rel=\"noreferrer\"  >Kotaku</a>\r<br>\r<br>“the concept is a compelling one, it's definitely a game to keep your eye on.”\r<br><a href=\"https://steamcommunity.com/linkfilter/?url=http://www.overclockersclub.com/news/32720/\" target=\"_blank\" rel=\"noreferrer\"  >OverclockersClub</a>\r<br>\r<br>“Day One: Garry's Incident is one of the most interesting independent projects being developed in Canada right now”\r<br><a href=\"https://steamcommunity.com/linkfilter/?url=http://shogungamer.com/news/15320/canadian-indie-showcase-day-one-garrys-incident\" target=\"_blank\" rel=\"noreferrer\"  >ShogunGamer</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/242800/header.jpg?t=1447358089",
+			"header_image": "images/day1.png",
 			"website": "http://www.dayonegame.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP / Vista / 7 / 8\r<br></li><li><strong>Processor:</strong> 2.2 Ghz Dual Core\r<br></li><li><strong>Memory:</strong> 4 GB RAM\r<br></li><li><strong>Graphics:</strong> 896 MB Nvidia Geforce GTX 260\r<br></li><li><strong>DirectX:</strong> Version 9.0c\r<br></li><li><strong>Storage:</strong> 3 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX Compatible\r</li></ul>",

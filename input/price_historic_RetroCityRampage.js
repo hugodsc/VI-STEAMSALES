@@ -1,4 +1,4 @@
-{
+retrocity.price={
     "success": true,
     "data": {
         "formatted": {

@@ -1,4 +1,4 @@
-{
+saintsrow3.daily={
     "start": 1479236400,
     "end": 1479841200,
     "step": 600,

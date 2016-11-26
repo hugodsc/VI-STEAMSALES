@@ -1,4 +1,4 @@
-{
+shadowrun.price={
     "success": true,
     "data": {
         "formatted": {

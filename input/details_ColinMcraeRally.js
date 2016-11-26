@@ -1,5 +1,6 @@
-{
-	"287340": {
+var colinmcrae = {
+	"details": {
+		"id":287340,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -11,7 +12,7 @@
 			"about_the_game": "Hit the dirt in Colin McRae Rally -  the classic off-road racing experience \r<br>\r<br>Colin McRae Rally features the car and track list from last year’s top selling mobile title and features THIRTY amazing rally stages in three environments taken from the PlayStation classic Colin McRae 2.0. for this PC and Mac edition. With a combined distance of over 130km, go flat out through the dirt and the dust of the Australian outback, take on dramatic climbs through the mountains of Greece and get sideways on the tight and twisty roads of Corsica. \r<br>\r<br><strong>THE CARS</strong>\r<br>Get behind the wheel of four legendary rally cars, the Subaru Impreza, Mitsubishi Lancer Evolution VI, Lancia Stratos and Colin McRae’s Ford Focus. Pace notes read by professional rally co-driver Nicky Grist help you fully commit through each and every stage.\r<br>\r<br><strong>THE CONTROL</strong>\r<br>Feel the thrill of putting pedal to metal across different surface types and blast through beautiful, challenging environments. Race with a range of pads, including Xbox 360 and PS3 controllers.\r<br>\r<br><strong>THE CHALLENGE</strong>\r<br>Take on different game modes including quick races, full rallies and Championships, post your best time to the leaderboards and unlock achievements. \r<br>\r<br><strong>COLIN MCRAE RALLY – THE CLASSIC RALLY EXPERIENCE RACES ONTO PC AND MAC</strong>",
 			"short_description": "Hit the dirt in Colin McRae Rally -  the classic off-road racing experience.",
 			"supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish<br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/287340/header.jpg?t=1447360873",
+			"header_image": "images/colinmcrae.png",
 			"website": "http://forums.codemasters.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows Vista, Windows 7 or Windows 8\r<br></li><li><strong>Processor:</strong> Intel Core 2 Duo @ 1.6 GHz or AMD Equivalent\r<br></li><li><strong>Memory:</strong> 2 GB RAM\r<br></li><li><strong>Graphics:</strong> Nvidia 6800 or ATI X1300 or Intel HD3000\r<br></li><li><strong>Storage:</strong> 1 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX Compatible Sound Device\r</li></ul>",

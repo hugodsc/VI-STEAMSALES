@@ -1,4 +1,4 @@
-{
+skyscrapper.price={
     "success": true,
     "data": {
         "formatted": {

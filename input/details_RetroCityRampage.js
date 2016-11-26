@@ -1,5 +1,6 @@
-{
-	"204630": {
+var retrocity ={
+	"details": {
+		"id":204630,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -13,7 +14,7 @@
 			"short_description": "OPEN-WORLD carjacking goes back to the '80s in this 8-BIT nostalgic throwback. Run missions! Outrun the law! Rampage the city with weapons, power-ups and vehicles!",
 			"supported_languages": "English, German, French, Italian, Spanish",
 			"reviews": "“A standout, memorable experience from one mission marker to the next.”\r<br>A – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gaming-age.com/2012/10/retro-city-rampage-review-for-psn-ps-vita/\" target=\"_blank\" rel=\"noreferrer\"  >Gaming Age</a>\r<br>\r<br>“It is one of the must-have games on PSN.”\r<br>9.5 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.ps3blog.net/2013/01/25/ps3-review-retro-city-rampage/\" target=\"_blank\" rel=\"noreferrer\"  >http://www.ps3blog.net/2013/01/25/ps3-review-retro-city-rampage/</a>\r<br>\r<br>“Retro City Rampage is glorious and downright essential.”\r<br>9.0 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.pocketgamer.co.uk/r/PS+Vita/Retro+City+Rampage/review.asp?c=47934\" target=\"_blank\" rel=\"noreferrer\"  >Pocket Gamer</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/204630/header.jpg?t=1459726434",
+			"header_image": "images/retrocity.png",
 			"website": "http://www.retrocityrampage.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong>Microsoft® Windows® XP / Vista / 7 / 8 / 10\r<br>\t</li><li><strong>Processor:</strong>1GHz processor\r<br>\t</li><li><strong>Memory:</strong>256 MB RAM\r<br>\t</li><li><strong>Graphics:</strong>Pixel Shader 2.0 and Vertex Shader 2.0\r<br>\t</li><li><strong>Hard Drive:</strong>40 MB HD space\r<br>\t</li><li><strong>Additional:</strong>Should run on any PC released within the past 5 years. Older graphics cards (such as those in netbooks) may not support bonus graphical filters.\r</li></ul>\r\r<br><strong>MS-DOS VERSION:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong>MS-DOS 3.3, FreeDOS or Compatible\r<br>\t</li><li><strong>Processor:</strong>486 DX or Compatible\r<br>\t</li><li><strong>Memory:</strong>4 MB RAM\r<br>\t</li><li><strong>Hard Drive:</strong>3.7 MB HD space\r</li></ul>",

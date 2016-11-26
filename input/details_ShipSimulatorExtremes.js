@@ -1,5 +1,6 @@
-{
-	"48800": {
+var shipsimulator={
+	"details": {
+		"id":48800,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -19,7 +20,7 @@
 			"about_the_game": "VSTEP and Paradox are proud to announce the next installment of the acclaimed Ship Simulator series. With over 550K copies sold, the series returns to take you into the most extreme conditions on earth…<br><br>\t\t\t\t\t\t\t\t\t\t\t\tEver wonder how it feels to sail a half-million-ton supertanker through the perfect storm? To take on illegal whale hunters in the Antarctic?  Or to feel the rush of being part of the Coast Guard as you evacuate a cruise liner in distress? Ship Simulator Extremes has players take on exciting missions all over the world as they pilot an impressive array of vessels and live the stories of real ship captains. With missions based on actual events in realistic environments at locations all over the world, the new Ship Simulator game is sure to take you to extremes!<br>\t\t\t\t\t\t\t\t\t\t\t\t<br>\t\t\t\t\t\t\t\t\t\t\t\t<strong>Key Features:</strong><br>\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"bb_ul\"><li>From the very hot to the very cold, sail to the most enchanted regions in the world. Explore the Antarctic or take in beautiful Bora Bora. Includes famous harbors and locations from around the world.<br>\t\t\t\t\t\t\t\t\t\t\t\t</li><li>Wide range of vessels to captain, including hovercraft, Coast Guard interceptors, mammoth tankers, tugs, cruise liners, and many others.<br>\t\t\t\t\t\t\t\t\t\t\t\t</li><li>Includes exciting storylines and missions from all over the world.<br>\t\t\t\t\t\t\t\t\t\t\t\t</li><li>Save the environment campaign: sail famous Greenpeace ships and take on ecological missions based on real events!<br>\t\t\t\t\t\t\t\t\t\t\t\t</li><li>Realistic water and weather system. Sail calm waters or take on the most extreme weather ever witnessed at sea.<br>\t\t\t\t\t\t\t\t\t\t\t\t</li><li>Online multiplayer mode. Sail online with your friends.<br>\t\t\t\t\t\t\t\t\t\t\t\t</li></ul>",
 			"short_description": "",
 			"supported_languages": "English, German, Spanish",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/48800/header.jpg?t=1447353476",
+			"header_image": "images/shipsimulator.png",
 			"website": "http://www.shipsim.com/",
 			"pc_requirements": {
 				"minimum": "<ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP (Min. service pack 2), Windows Vista or Windows 7. 32 and 64 bits OS supported<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Processor:</strong> 3 Ghz P4 Intel or AMD equivalent processor<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Memory:</strong> 2GB (Windows XP) or 3GB (Vista or Windows 7)<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Hard Disk Space:</strong> 3.5 GB<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Video Card:</strong> Geforce 8800GT or ATI Radeon 4850 with 256MB ram (At least Shader model 3.0)<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Sound:</strong> DirectX compatible<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>DirectX®:</strong> 9.0c\t<br>\t\t\t\t\t\t\t\t\t\t\t\t\t</li></ul>"

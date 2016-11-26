@@ -1,4 +1,4 @@
-{
+insurgency.price={
     "success": true,
     "data": {
         "formatted": {

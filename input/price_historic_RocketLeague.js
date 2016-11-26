@@ -1,4 +1,4 @@
-{
+rocketleague.price={
     "success": true,
     "data": {
         "formatted": {

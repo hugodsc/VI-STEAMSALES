@@ -1,5 +1,6 @@
-{
-	"207140": {
+var speedrunners ={
+	"details": {
+		"id":207140,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -17,7 +18,7 @@
 			"short_description": "Cut-throat multiplayer running game that pits 4 players against each other, locally and/or online. Run, jump, swing around, and use devious weapons and pick-ups to knock opponents off-screen! One of the most competitive games you'll ever play.",
 			"supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish, Czech, Romanian, Russian, Simplified Chinese, Dutch, Hungarian<br><strong>*</strong>languages with full audio support",
 			"reviews": "“Speedrunners is the Competitive Multiplayer Mario That Nintendo Should've Made”\r<br><a href=\"https://steamcommunity.com/linkfilter/?url=http://www.kotaku.co.uk/2015/05/22/speedrunners-is-the-competitive-multiplayer-mario-that-nintendo-shouldve-made\" target=\"_blank\" rel=\"noreferrer\"  >Kotaku</a>\r<br>\r<br>“A Great Example Of Early Access Development Benefitting A Game And Its Players”\r<br><a href=\"http://www.rockpapershotgun.com/2015/08/21/speedrunners-review-early-access/\" target=\"_blank\" rel=\"noreferrer\"  >Rock Paper Shotgun</a>\r<br>\r<br>“SpeedRunners is a fully realized idea, a great platformer, and a terrific party game that’s fun online as well.”\r<br><a href=\"http://www.pcgamer.com/2014/07/31/speedrunners-review-early-access/\" target=\"_blank\" rel=\"noreferrer\"  >PCGamer</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/207140/header.jpg?t=1464952451",
+			"header_image": "images/speedrunners.png",
 			"website": "http://tinyBuild.com/speedrunners",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP and up\r<br></li><li><strong>Processor:</strong> 1Ghz and up\r<br></li><li><strong>Memory:</strong> 1 GB RAM\r<br></li><li><strong>Graphics:</strong> Dedicated video card recommended\r<br></li><li><strong>Network:</strong> Broadband Internet connection\r<br></li><li><strong>Storage:</strong> 900 MB available space\r<br></li><li><strong>Additional Notes:</strong> MAC Users: SpeedRunners runs great in Parallels Desktop\r</li></ul>"

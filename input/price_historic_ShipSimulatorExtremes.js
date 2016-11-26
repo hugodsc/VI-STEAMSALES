@@ -1,4 +1,4 @@
-{
+shipsimulator.price={
     "success": true,
     "data": {
         "formatted": {

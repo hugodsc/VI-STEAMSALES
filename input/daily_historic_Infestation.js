@@ -1,4 +1,4 @@
-{
+infestation.daily={
     "start": 1479235800,
     "end": 1479840600,
     "step": 600,

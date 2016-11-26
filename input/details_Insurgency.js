@@ -1,5 +1,6 @@
-{
-	"222880": {
+var insurgency ={
+	"details": {
+		"id":222880,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -13,7 +14,7 @@
 			"short_description": "Take to the streets for intense close quarters combat, where a team's survival depends upon securing crucial strongholds and destroying enemy supply in this multiplayer and cooperative Source Engine based experience. The follow-up game to the award-winning Source mod, <i>Insurgency</i> is highly competitive and unforgivingly lethal, striking a balance between one-life gameplay and prolonged action.",
 			"supported_languages": "English<strong>*</strong>, French, German, Dutch, Polish, Portuguese-Brazil, Russian, Simplified Chinese, Italian, Spanish, Ukrainian<br><strong>*</strong>languages with full audio support",
 			"reviews": "“This game has me hooked and I see it as a proudly raised middle finger in the face of large developers who seem to completely ignore fairness and player equality in favour of potential income.”\r<br>9.0 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.hookedgamers.com/pc/insurgency/review/article-1188.html\" target=\"_blank\" rel=\"noreferrer\"  >Hooked Gamers</a>\r<br>\r<br>“Insurgency is going to win fans for its gameplay. The action is highly competitive and focused. It brings me about as close to a real gunfight as I’ll likely ever want to get.”\r<br>75 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://venturebeat.com/2014/01/22/insurgency-remedies-call-of-dutys-and-battlefields-hollywood-take-on-competitive-warfare-review/\" target=\"_blank\" rel=\"noreferrer\"  >GamesBeat</a>\r<br>\r<br>“Insurgency is a well paced tactical shooter that's just a couple of big fixes away from competing with Counter-Strike.”\r<br>75 – <a href=\"http://ca.ign.com/articles/2014/01/28/insurgency-review\" target=\"_blank\" rel=\"noreferrer\"  >IGN</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/222880/header.jpg?t=1450483704",
+			"header_image": "images/insurgency.png",
 			"website": "https://www.newworldinteractive.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows® 7/Vista/XP\r<br></li><li><strong>Processor:</strong> Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better\r<br></li><li><strong>Memory:</strong> 4 GB RAM\r<br></li><li><strong>Graphics:</strong> Video card must be 512 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0\r<br></li><li><strong>Hard Drive:</strong> 10 GB HD space\r<br></li><li><strong>DirectX:</strong> 9.0c\r</li></ul>",

@@ -1,4 +1,4 @@
-{
+godus.price={
     "success": true,
     "data": {
         "formatted": {

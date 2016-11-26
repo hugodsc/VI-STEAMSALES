@@ -1,5 +1,6 @@
-{
-	"620": {
+var portal2 ={
+	"details": {
+		"id":620,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -15,7 +16,7 @@
 			"about_the_game": "Portal 2 draws from the award-winning formula of innovative gameplay, story, and music that earned the original Portal over 70 industry accolades and created a cult following.\r<br>\r<br>\t\t\t\t\t\t\t\t\t\tThe single-player portion of Portal 2 introduces a cast of dynamic new characters, a host of fresh puzzle elements, and a much larger set of devious test chambers. Players will explore never-before-seen areas of the Aperture Science Labs and be reunited with GLaDOS, the occasionally murderous computer companion who guided them through the original game.\r<br>\t\t\t\t\t\t\t\t\t\t\r<br>\t\t\t\t\t\t\t\t\t\tThe game’s two-player cooperative mode features its own entirely separate campaign with a unique story, test chambers, and two new player characters. This new mode forces players to reconsider everything they thought they knew about portals. Success will require them to not just act cooperatively, but to think cooperatively.\r<br>\t\t\t\t\t\t\t\t\t\t\r<br>\t\t\t\t\t\t\t\t\t\t<strong>Product Features</strong>\r<br>\t\t\t\t\t\t\t\t\t\t<ul class=\"bb_ul\"><li><strong>Extensive single player:</strong> Featuring next generation gameplay and a wildly-engrossing story.\r<br>\t\t\t\t\t\t\t\t\t\t</li><li><strong>Complete two-person co-op:</strong> Multiplayer game featuring its own dedicated story, characters, and gameplay.\r<br>\t\t\t\t\t\t\t\t\t\t</li><li><strong>Advanced physics:</strong> Allows for the creation of a whole new range of interesting challenges, producing a much larger but not harder game.\r<br>\t\t\t\t\t\t\t\t\t\t</li><li><strong>Original music.</strong>\r<br>\t\t\t\t\t\t\t\t\t\t</li><li><strong>Massive sequel:</strong> The original Portal was named 2007's Game of the Year by over 30 publications worldwide. \r<br>\t\t\t\t\t\t\t\t\t\t</li><li><strong>Editing Tools:</strong> Portal 2 editing tools will be included.\r<br>\t\t\t\t\t\t\t\t\t\t</li></ul>",
 			"short_description": "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!",
 			"supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish<strong>*</strong>, Czech, Danish, Dutch, Finnish, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian<strong>*</strong>, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish<br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg?t=1452903431",
+			"header_image": "images/portal2.png",
 			"website": "http://www.thinkwithportals.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 / Vista / XP\r<br></li><li><strong>Processor:</strong> 3.0 GHz P4, Dual Core 2.0 (or higher) or AMD64X2 (or higher)\r<br></li><li><strong>Memory:</strong> 2 GB RAM\r<br></li><li><strong>Graphics:</strong> Video card must be 128 MB or more and with support for Pixel Shader 2.0b (ATI Radeon X800 or higher / NVIDIA GeForce 7600 or higher / Intel HD Graphics 2000 or higher).\r<br></li><li><strong>DirectX:</strong> Version 9.0c\r<br></li><li><strong>Storage:</strong> 8 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX 9.0c compatible\r</li></ul>"

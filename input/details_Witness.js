@@ -1,5 +1,6 @@
-{
-	"210970": {
+var witness{
+	"details": {
+		"id":210970,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -11,7 +12,7 @@
 			"about_the_game": "You wake up, alone, on a strange island full of puzzles that will challenge and surprise you.<br />\r\n<br />\r\nYou don't remember who you are, and you don't remember how you got here, but there's one thing you can do: explore the island in hope of discovering clues, regaining your memory, and somehow finding your way home.<br />\r\n<br />\r\nThe Witness is a single-player game in an open world with dozens of locations to explore and over 500 puzzles. This game respects you as an intelligent player and it treats your time as precious. There's no filler; each of those puzzles brings its own new idea into the mix. So, this is a game full of ideas.",
 			"short_description": "You wake up, alone, on a strange island full of puzzles that will challenge and surprise you.",
 			"supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish, Polish, Portuguese, Portuguese-Brazil, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean, Hungarian<br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/210970/header.jpg?t=1457059079",
+			"header_image": "images/witness.png",
 			"website": "http://the-witness.net/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7\r<br></li><li><strong>Processor:</strong> 1.8GHz\r<br></li><li><strong>Memory:</strong> 4 GB RAM\r<br></li><li><strong>Graphics:</strong> Intel HD 4000 series\r<br></li><li><strong>DirectX:</strong> Version 10\r<br></li><li><strong>Storage:</strong> 5 GB available space\r</li></ul>",

@@ -1,4 +1,4 @@
-{
+drugwars.price={
     "success": true,
     "data": {
         "formatted": {

@@ -1,5 +1,6 @@
-{
-	"275850": {
+var nomansky={
+	"details": {
+		"id": 275850,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -12,7 +13,7 @@
 			"about_the_game": "Inspired by the adventure and imagination that we love from classic science-fiction, No Man's Sky presents you with a galaxy to explore, filled with unique planets and lifeforms, and constant danger and action.\r<br>\r<br>In No Man's Sky, every star is the light of a distant sun, each orbited by planets filled with life, and you can go to any of them you choose. Fly smoothly from deep space to planetary surfaces, with no loading screens, and no limits. In this infinite procedurally generated universe, you'll discover places and creatures that no other players have seen before - and perhaps never will again.<h2 class=\"bb_tag\">Embark on an epic voyage</h2>\rAt the centre of the galaxy lies a irresistible pulse which draws you on a journey towards it to learn the true nature of the cosmos. But, facing hostile creatures and fierce pirates, you'll know that death comes at a cost, and survival will be down to the choices you make over how you upgrade your ship, your weapon and suit.<h2 class=\"bb_tag\">Find your own destiny</h2>\rYour voyage through No Man's Sky is up to you. Will you be a fighter, preying on the weak and taking their riches, or taking out pirates for their bounties? Power is yours if you upgrade your ship for speed and weaponry.\r<br>\r<br>Or a trader? Find rich resources on forgotten worlds and exploit them for the highest prices. Invest in more cargo space and you'll reap huge rewards.\r<br>\r<br>Or perhaps an explorer? Go beyond the known frontier and discover places and things that no one has ever seen before. Upgrade your engines to jump ever farther, and strengthen your suit for survival in toxic environments that would kill the unwary.<h2 class=\"bb_tag\">Share your journey</h2>\rThe galaxy is a living, breathing place. Trade convoys travel between stars, factions vie for territory, pirates hunt the unwary, and the police are ever watching. Every other player lives in the same galaxy, and you can choose to share your discoveries with them on a map that spans known space. Perhaps you will see the results of their actions as well as your own...",
 			"short_description": "No Man's Sky is a game about exploration and survival in an infinite procedurally generated universe.",
 			"supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish<strong>*</strong>, Dutch, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Portuguese<strong>*</strong>, Portuguese-Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese<strong>*</strong><br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/275850/header.jpg?t=1475705655",
+			"header_image": "images/nomansky.png",
 			"website": "http://www.no-mans-sky.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7/8.1/10 (64-bit versions)\r<br></li><li><strong>Processor:</strong> Intel Core i3\r<br></li><li><strong>Memory:</strong> 8 GB RAM\r<br></li><li><strong>Graphics:</strong> nVidia GTX 480, AMD Radeon 7870\r<br></li><li><strong>Storage:</strong> 10 GB available space\r</li></ul>"

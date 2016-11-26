@@ -1,5 +1,6 @@
-{
-	"72850": {
+var skyrim={
+	"details": {
+		"id":72850,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -17,7 +18,7 @@
 			"about_the_game": "<strong>EPIC FANTASY REBORN</strong>\r<br>\t\t\t\t\t\t\tThe next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.\r<br>\r<br>\t\t\t\t\t\t\t<strong>LIVE ANOTHER LIFE, IN ANOTHER WORLD</strong>\r<br>\t\t\t\t\t\t\tPlay any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before.\r<br>\r<br>\t\t\t\t\t\t\t<strong>ALL NEW GRAPHICS AND GAMEPLAY ENGINE</strong>\r<br>\t\t\t\t\t\t\tSkyrim’s new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons.\r<br>\r<br>\t\t\t\t\t\t\t<strong>YOU ARE WHAT YOU PLAY</strong>\r<br>\t\t\t\t\t\t\tChoose from hundreds of weapons, spells, and abilities.  The new character system allows you to play any way you want and define yourself through your actions.\r<br>\r<br>\t\t\t\t\t\t\t<strong>DRAGON RETURN</strong>\r<br>\t\t\t\t\t\t\tBattle ancient dragons like you’ve never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
 			"short_description": "",
 			"supported_languages": "English, French, German, Italian, Spanish, Japanese, Czech, Polish, Russian",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/72850/header.jpg?t=1467150175",
+			"header_image": "images/skyrim.png",
 			"website": "http://elderscrolls.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br>\t\t\t\t\t\t\t\t<ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7/Vista/XP PC (32 or 64 bit)\r<br>\t\t\t\t\t\t\t\t</li><li><strong>Processor:</strong> Dual Core 2.0GHz or equivalent processor\r<br>\t\t\t\t\t\t\t\t</li><li><strong>Memory:</strong> 2GB System RAM\r<br>\t\t\t\t\t\t\t\t</li><li><strong>Hard Disk Space:</strong> 6GB free HDD Space\r<br>\t\t\t\t\t\t\t\t</li><li><strong>Video Card:</strong> Direct X 9.0c compliant video card with 512 MB of RAM\r<br>\t\t\t\t\t\t\t\t</li><li><strong>Sound:</strong> DirectX compatible sound card\r<br>\t\t\t\t\t\t\t\t</li></ul>",

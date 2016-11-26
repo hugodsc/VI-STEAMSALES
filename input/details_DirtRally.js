@@ -1,5 +1,6 @@
-{
-	"310560": {
+var dirtRally ={
+	"details": {
+		"id":310560,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -13,7 +14,7 @@
 			"short_description": "DiRT Rally is the most authentic and thrilling rally game ever made, road-tested over 80 million miles by the DiRT community. It perfectly captures that white knuckle feeling of racing on the edge as you hurtle along dangerous roads, knowing that one crash could irreparably harm your stage time.",
 			"supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish<strong>*</strong>, Portuguese-Brazil<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
 			"reviews": "“Dirt Rally is a brilliant looking and incredible sounding racing sim that feels absolutely outstanding”\r<br>8.9 – <a href=\"http://uk.ign.com/articles/2015/12/22/dirt-rally-review\" target=\"_blank\" rel=\"noreferrer\"  >IGN</a>\r<br>\r<br>“Codemasters has delivered what's quite simply its finest driving game to date.”\r<br>Eurogamer Recommended – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.eurogamer.net/articles/2015-12-14-dirt-rally-review\" target=\"_blank\" rel=\"noreferrer\"  >Eurogamer</a>\r<br>\r<br>“This is as authentic a portrayal of rally as you’re likely to find, and proves to be not just a return to form for Codemasters, but its best game to date.”\r<br>8/10 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gamespot.com/reviews/dirt-rally-review/1900-6416333/\" target=\"_blank\" rel=\"noreferrer\"  >Gamespot</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/310560/header.jpg?t=1473440929",
+			"header_image": "images/dirtrally.png",
 			"website": "http://www.dirtgame.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> 64bit Versions of Windows 7, Windows 8, Windows 10\r<br></li><li><strong>Processor:</strong> AMD FX Series or Intel Core i3 Series\r<br></li><li><strong>Memory:</strong> 4 GB RAM\r<br></li><li><strong>Graphics:</strong> AMD HD5450 or Nvidia GT430 or Intel HD4000 with 1GB of VRAM (DirectX 11 graphics card required)\r<br></li><li><strong>DirectX:</strong> Version 11\r<br></li><li><strong>Storage:</strong> 50 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX Compatible soundcard\r<br></li><li><strong>Additional Notes:</strong> Supported Graphics Cards: AMD HD5000 Series, HD6000 Series, HD7000 Series, R7 Series, R9 Series Nvidia GTX400 Series, GTX500 Series, GTX600 Series, GTX700 Series, GTX900 Series Intel HD4000 Series, HD5000 Series\r</li></ul>",

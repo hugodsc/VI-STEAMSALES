@@ -1,5 +1,6 @@
-{
-	"226700": {
+var infestation ={
+	"details": {
+		"id": 226700,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -11,7 +12,7 @@
 			"about_the_game": "Infestation: Survivor Stories is a Survival Horror MMO that immerses players in a zombie-infested, post-apocalyptic world in which a viral outbreak has decimated the human population leaving in its wake, a nightmare of epic proportion.\r<br>\r<br><ul class=\"bb_ul\"><li>\tA Huge Persistent World: This is an nonlinear open world game\r<br></li><li>\tExplore, Scavenge, Kill, Survive: You are one of the few survivors and must navigate the desolate countryside exploring cities and scavenging for items\r<br></li><li>\tGroup with other players to increase your chances of survival\r<br>\r</li></ul><h2 class=\"bb_tag\">Key Features</h2>\r<ul class=\"bb_ul\"><li>\tCombination of First-Person and Third Person Perspectives\r<br></li><li>\tMeld of PVE (Player versus Environment) and PVP (Player versus Player)\r<br></li><li>\tSafe Settlements where Players can access their global inventory\r<br></li><li>\tCreate your own Clans\r<br></li><li>\tReputation system – Choose to become a lawman or bandit\r<br></li><li>\tLeave Messages for friends in the game world with a time capsule\r<br></li><li>\tImmersive environment with unique and spine chilling sound effects\r<br></li><li>\tHuge variation of melee and firearm weapon types\r</li></ul>",
 			"short_description": "Infestation is a Survival Horror MMO that immerses players in a zombie-infested, post-apocalyptic world in which a viral outbreak has decimated the human population leaving in its wake, a nightmare of epic proportion.",
 			"supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/226700/header.jpg?t=1456967628",
+			"header_image": "images/infestation.png",
 			"website": "http://www.infestationmmo.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong>Windows Vista/Windows 7 (enhanced for 64-bit OS)\r<br>\t</li><li><strong>Processor:</strong>2.4 GHZ Quad Core or better\r<br>\t</li><li><strong>Memory:</strong>4 GB RAM\r<br>\t</li><li><strong>Graphics:</strong>Nvidia GTX 460/ATI Radeon HD 5850\r<br>\t</li><li><strong>DirectX®:</strong>9.0\r<br>\t</li><li><strong>Hard Drive:</strong>3 GB HD space\r<br>\t</li><li><strong>Sound:</strong>Windows Compatible Sound Card\r<br>\t</li><li><strong>Other Requirements:</strong>Broadband Internet connection\r</li></ul>",

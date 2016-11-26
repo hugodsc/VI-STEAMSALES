@@ -1,4 +1,4 @@
-{
+dirtrally.price={
     "success": true,
     "data": {
         "formatted": {

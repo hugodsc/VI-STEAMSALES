@@ -1,4 +1,4 @@
-{
+witness.daily={
     "start": 1479237600,
     "end": 1479842400,
     "step": 600,

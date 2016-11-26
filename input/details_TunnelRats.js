@@ -1,5 +1,6 @@
-{
-	"31300": {
+var tunnelrats={
+	"details": {
+		"id":31300,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -11,7 +12,7 @@
 			"about_the_game": "<p>Tunnel Rats is a dark and intense single-player shooter for PC that depicts the horrific realities of the Vietnam War as seen through the eyes of a young US soldier.</p>\n                    <p>As member of a &#147;Tunnel Rats&#148; squad, the player is trained to clearing out the huge tunnel systems underneath the jungle of Vietnam. After all of his mates got killed in an ambush, the young GI finds himself all alone, fighting against the Vietcong, their deadly traps and his growing inner madness...</p>\n                    <ul>\n                    <li>Relive the atmosphere and unique scenes of Uwe Boll&#146;s simultaneously released movie &#147;1968 Tunnel Rats&#148;</li>\n                    <li>Face the claustrophobic, pitch-black tunnel maze and a war-torn jungle on the surface, riddled with the most nasty traps ever built</li>\n                    <li>Experience the dark horror of war, expressed through expressive,harsh visuals, a creepy soundtrack and shocking scenes of torture and death</li>\n                    <li>Intense, story-driven campaign with 8 levels</li>\n                    <li>Complex underground tunnel systems and hidden places</li>\n                    <li>Dark inner monologue and growing loss of grid</li>\n                    <li>10 authentic weapons, including flamethrowers</li>\n                    <li>20 trap types, including whip and pits, snakes and water traps</li>\n                    </ul>",
 			"short_description": "",
 			"supported_languages": "English",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/31300/header.jpg?t=1447351855",
+			"header_image": "images/tunnelrats.png",
 			"website": null,
 			"pc_requirements": {
 				"minimum": "<p><strong>Minimum:</strong></p>\n                    <ul>\n\t                    <li><strong>OS:</strong> Windows XP and Windows Vista</li>\n\t                    <li><strong>Processor:</strong> Singlecore CPU with 2 Ghz</li>\n\t                    <li><strong>Memory:</strong> 512MB RAM</li>\n\t                    <li><strong>Graphics:</strong> Pixel Shader 3 Graphics card with 256mb VRAM (Geforce 6800 or Ati X1600)</li>\n\t                    <li><strong>DirectX®:</strong> 9.0c</li>\n\t                    <li><strong>Hard Drive:</strong> 2GB free hard disk space</li>\n\t                    <li><strong>Sound:</strong> Standard stereo soundcard</li>\n                    </ul>",

@@ -1,5 +1,6 @@
-{
-	"34330": {
+var shogun2={
+	"details": {
+		"id":34330,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -22,7 +23,7 @@
 			"short_description": "Total War: SHOGUN 2 is the perfect mix of real-time and turn-based strategy gaming for newcomers and veterans alike.",
 			"supported_languages": "English<strong>*</strong>, Czech, French<strong>*</strong>, German<strong>*</strong>, Italian<strong>*</strong>, Polish, Russian<strong>*</strong>, Spanish<strong>*</strong><br><strong>*</strong>languages with full audio support",
 			"reviews": "“...the best gameplay and design of any entry in the franchise.”<br />\r\n9.5/10 – Game Informer, Editor's Choice Gold Award<br />\r\n\t\t\t\t\t\t “Consistently thrilling”<br />\r\n92% – PC GAMER, Editor's Choice<br />\r\n\t\t\t\t\t\t “...one Hell of a homecoming.”<br />\r\n– IGN",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/201270/header.jpg?t=1447353553",
+			"header_image": "images/shogun2.png",
 			"website": "http://www.totalwar.com/shogun2",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br>\t\t\t\t\t\t\t\t<ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 7 / Vista / XP\r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>Processor:</strong> 2 GHz Intel Dual Core processor / 2.6 GHz Intel Single Core processor, or AMD equivalent (with SSE2)\r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>Memory:</strong> 1GB RAM (XP), 2GB RAM (Vista / Windows7) \r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>Graphics:</strong> 256 MB DirectX 9.0c compatible card (shader model 3)  \r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>DirectX®:</strong> DirectX 9.0c\r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>Hard Drive:</strong> 32GB free hard disk space\r<br>\t\t\t\t\t\t\t\t\t</li><li><strong>Screen Resolution:</strong> 1024x768 minimum\r<br>\t\t\t\t\t\t\t\t</li></ul>",

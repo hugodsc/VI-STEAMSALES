@@ -1,4 +1,4 @@
-{
+skyscrapper.daily={
     "start": 1479237000,
     "end": 1479841800,
     "step": 600,

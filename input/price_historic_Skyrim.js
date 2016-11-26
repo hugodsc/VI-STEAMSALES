@@ -1,4 +1,4 @@
-{
+skyrim.price={
     "success": true,
     "data": {
         "formatted": {

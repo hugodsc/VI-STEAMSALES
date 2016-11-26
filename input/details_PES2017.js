@@ -1,5 +1,6 @@
-{
-	"456610": {
+var pes2017= {
+	"details": {
+		"id":456610,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -12,7 +13,7 @@
 			"about_the_game": "The award winning series returns taking the famed gameplay to a new level by achieving interactive reality in both control and new authentic visuals. <br />\r\n<br />\r\nControl Reality in Pro Evolution Soccer 2017 with these new features:<br />\r\n<br />\r\n• Real Touch – Players control the ball in unique ways based on where and how you control them<br />\r\n<br />\r\n• Adaptive AI – For the first time in a football game, the AI will learn how you play  and adapt accordingly<br />\r\n<br />\r\n• Natural Player Movement – Hundreds of new animations have been added to bring the players to life<br />\r\n<br />\r\n• Goalkeepers – Keepers see a great jump in their quality, through added motions and animations<br />\r\n<br />\r\n• myClub – Buy the players you want with the new myClub Scout/Auction feature",
 			"short_description": "PES 2017 reaches a new level by achieving interactive reality.",
 			"supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish<strong>*</strong>, Arabic<strong>*</strong>, Greek<strong>*</strong>, Korean, Portuguese<strong>*</strong>, Portuguese-Brazil<strong>*</strong>, Russian, Simplified Chinese<strong>*</strong>, Swedish, Traditional Chinese<strong>*</strong>, Turkish, Dutch<br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/456610/header.jpg?t=1474580447",
+			"header_image": "images/pes2017.png",
 			"website": "https://www.konami.com/wepes/2017/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows 10, 8.1, 8, 7 SP1, Vista SP2\r<br></li><li><strong>Processor:</strong> Intel Core2 Duo 1.8GHz / AMD Athlon Ⅱ X2 240 or equivalent processor\r<br></li><li><strong>Memory:</strong> 1 GB RAM\r<br></li><li><strong>Graphics:</strong> DirectX 9.0c compatible video card. 1024MB Pixel Shader 3.0 (NVIDIA GeForce 8800 / AMD/ATI Radeon X1600 / Intel HD Graphics 3000 or better)\r<br></li><li><strong>DirectX:</strong> Version 9.0c\r<br></li><li><strong>Storage:</strong> 8 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX 9.0c compatible sound card\r<br></li><li><strong>Additional Notes:</strong> 800 x 600 monitor resolution; 4x DVD-ROM Drive; TCP/IP 512 kbps or higher\r</li></ul>",
