@@ -14,7 +14,7 @@ var csgo =
 			"about_the_game": "Counter-Strike: Global Offensive (CS: GO) will expand upon the team-based action gameplay that it pioneered when it was launched 14 years ago.<br />\r\n<br />\r\nCS: GO features new maps, characters, and weapons and delivers updated versions of the classic CS content (de_dust, etc.). In addition, CS: GO will introduce new gameplay modes, matchmaking, leader boards, and more.<br />\r\n<br />\r\n&quot;Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC action game in the world almost immediately after its release in August 1999,&quot; said Doug Lombardi at Valve. &quot;For the past 12 years, it has continued to be one of the most-played games in the world, headline competitive gaming tournaments and selling over 25 million units worldwide across the franchise. CS: GO promises to expand on CS' award-winning gameplay and deliver it to gamers on the PC as well as the next gen consoles and the Mac.&quot;",
 			"short_description": "",
 			"supported_languages": "Czech, Danish, Dutch, English<strong>*</strong>, Finnish, French, German, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese-Brazil, Romanian, Russian, Simplified Chinese, Spanish, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Ukrainian<br><strong>*</strong>languages with full audio support",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1467065027",
+			"header_image": "images/csgo.png",
 			"website": "http://blog.counter-strike.net/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows® 7/Vista/XP\r<br></li><li><strong>Processor:</strong> Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better\r<br></li><li><strong>Memory:</strong> 2 GB RAM\r<br></li><li><strong>Graphics:</strong> Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0\r<br></li><li><strong>DirectX:</strong> Version 9.0c\r<br></li><li><strong>Storage:</strong> 8 GB available space\r</li></ul>"
@@ -32,7 +32,7 @@ var csgo =
 				"Valve"
 			],
 			"country": [
-				"United States of America","USA"
+				"USA"
 			],
 			"price_overview": {
 				"currency": "USD",

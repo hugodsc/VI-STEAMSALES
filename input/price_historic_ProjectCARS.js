@@ -1,4 +1,4 @@
-{
+pcars.price = {
     "success": true,
     "data": {
         "formatted": {

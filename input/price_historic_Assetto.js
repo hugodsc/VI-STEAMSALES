@@ -1,4 +1,4 @@
-{
+asseto.price = {
     "success": true,
     "data": {
         "formatted": {

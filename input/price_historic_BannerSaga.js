@@ -1,4 +1,4 @@
-{
+banner.price={
     "success": true,
     "data": {
         "formatted": {
