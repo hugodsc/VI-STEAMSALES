@@ -1,5 +1,7 @@
+var banner =
 {
-	"237990": {
+	"details": {
+		"id":237990,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -17,7 +19,7 @@
 			"short_description": "",
 			"supported_languages": "English<strong>*</strong>, French, German, Spanish, Polish, Portuguese-Brazil, Russian, Italian, Japanese<br><strong>*</strong>languages with full audio support",
 			"reviews": "“Game of Thrones Meets Vikings Meets Disney. The Banner Saga is blindingly lovely and arguably just as intriguing to play. Built atop a world that all but demands the attention of travel documentaries, it's epic in the literal sense of the word.”\r<br>100% – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.usgamer.net/articles/the-banner-saga-pc-review-game-of-thrones-meets-vikings-meets-disney\" target=\"_blank\" rel=\"noreferrer\"  >US Gamer</a>\r<br>\r<br>“With a refreshingly unique aesthetic, well-written story, and challenging gameplay, The Banner Saga is an excellent adventure well worth your time.”\r<br>90% – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gamesradar.com/the-banner-saga-review/\" target=\"_blank\" rel=\"noreferrer\"  >Games Radar</a>\r<br>\r<br>“The Banner Saga deserves commendation for the strength of its art and music experience alone, which shatters conventions.”\r<br>86% – <a href=\"http://www.ign.com/articles/2014/01/14/the-banner-saga-review-2\" target=\"_blank\" rel=\"noreferrer\"  >IGN</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/237990/header.jpg?t=1472691328",
+			"header_image": "images/banner.png",
 			"website": "http://thebannersaga.com",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows XP SP3\r<br></li><li><strong>Memory:</strong> 2 GB RAM\r<br></li><li><strong>Storage:</strong> 4 GB available space\r</li></ul>",
@@ -38,7 +40,7 @@
 				"Versus Evil"
 			],
 			"country": [
-				"USA"
+				"United States of America","USA"
 			],
 			"price_overview": {
 				"currency": "EUR",

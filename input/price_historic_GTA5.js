@@ -1,4 +1,4 @@
-{
+gta.price = {
     "success": true,
     "data": {
         "formatted": {

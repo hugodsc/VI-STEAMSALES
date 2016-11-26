@@ -1,51 +1,45 @@
-function line_chart_price(data, data2) {
+function line_chart_price() {
+    if(arguments.length == 0) return;
     var vis = d3.select("#visualisation_price")
-      , WIDTH = 1000
-      , HEIGHT = 500
+      , WIDTH = $("#visualisation_price").width()
+      , HEIGHT = $("#visualisation_price").height() -10
       , MARGINS = {
         top: 20,
-        right: 20,
-        bottom: 20,
-        left: 100
+        right: 10,
+        bottom: 10,
+        left: 20
     }
-    var maxPrice = data.data[0].price
-      , maxDate = parseDate(data.data[0].date)
-      , minDate = parseDate(data.data[0].date)
-      , minPrice = data.data[0].price
-    for (var i = 1; i < data.data.length; i++) {
-        if (data.data[i].price > maxPrice) {
-            maxPrice = data.data[i].price
-        }
-        var tempDate = parseDate(data.data[i].date)
-        if (tempDate > maxDate) {
-            maxDate = tempDate
-        }
-        if (data.data[i].price < minPrice) {
-            minPrice = data.data[i].price
-        }
-        if (tempDate < minDate) {
-            minDate = tempDate
-        }
+    
+    var maxPrice = arguments[0].data[0].price
+      , maxDate = parseDate(arguments[0].data[0].date)
+      , minDate = parseDate(arguments[0].data[0].date)
+      , minPrice = arguments[0].data[0].price
+
+    for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
+        for (var i = 0; i < arguments[argsCounter].data.length; i++) {
+                if (arguments[argsCounter].data[i].price > maxPrice) {
+                    maxPrice = arguments[argsCounter].data[i].price
+                }
+                var tempDate = parseDate(arguments[argsCounter].data[i].date)
+                if (tempDate > maxDate) {
+                    maxDate = tempDate
+                }
+                if (arguments[argsCounter].data[i].price < minPrice) {
+                    minPrice = arguments[argsCounter].data[i].price
+                }
+                if (tempDate < minDate) {
+                    minDate = tempDate
+                }
+            }
+        argsCounter++
     }
-    for (var i = 1; i < data2.data.length; i++) {
-        if (data2.data[i].price > maxPrice) {
-            maxPrice = data2.data[i].price
-        }
-        var tempDate = parseDate(data2.data[i].date)
-        if (tempDate > maxDate) {
-            maxDate = tempDate
-        }
-        if (data2.data[i].price < minPrice) {
-            minPrice = data2.data[i].price
-        }
-        if (tempDate < minDate) {
-            minDate = tempDate
-        }
-    }
+    
+   
     xScale = d3.time.scale().range([MARGINS.left, WIDTH - MARGINS.right]).domain([minDate, maxDate])
     yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([minPrice, maxPrice])
     xAxis = d3.svg.axis().scale(xScale),
     yAxis = d3.svg.axis().scale(yScale).orient("left");
+    d3.selectAll("#visualisation_price svg > *").remove();
     vis.append("svg:g").attr("class", "axis").attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")").call(xAxis);
     vis.append("svg:g").attr("class", "axis").attr("transform", "translate(" + (MARGINS.left) + ",0)").call(yAxis);
     var lineGen = d3.svg.line().x(function(d) {
@@ -53,6 +47,9 @@ function line_chart_price(data, data2) {
     }).y(function(d) {
         return yScale(d.price);
     }).interpolate("basis");
-    vis.append('svg:path').attr('d', lineGen(data.data)).attr('stroke', 'green').attr('stroke-width', 2).attr('fill', 'none');
-    vis.append('svg:path').attr('d', lineGen(data2.data)).attr('stroke', 'blue').attr('stroke-width', 2).attr('fill', 'none');
+
+    for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
+        vis.append('svg:path').attr('d', lineGen(arguments[argsCounter].data)).attr('stroke', arguments[argsCounter+1]).attr('stroke-width', 2).attr('fill', 'none');
+        argsCounter++
+    }    
 }

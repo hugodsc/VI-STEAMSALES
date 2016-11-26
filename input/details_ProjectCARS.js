@@ -1,5 +1,6 @@
-{
-	"234630": {
+var pcars ={
+	"details": {
+		"id": 234630,
 		"success": true,
 		"data": {
 			"type": "game",
@@ -26,7 +27,7 @@
 			"short_description": "<strong><i>Project CARS</i></strong> is the ultimate driver journey!",
 			"supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish, Polish, Portuguese-Brazil, Russian<br><strong>*</strong>languages with full audio support",
 			"reviews": "“Project CARS looks great, sounds fantastic, and feels even better”\r<br>8.9/10 – <a href=\"http://uk.ign.com/articles/2015/05/06/project-cars-review\" target=\"_blank\" rel=\"noreferrer\"  >IGN</a>\r<br>\r<br>“LA nouvelle référence des jeux de course sur consoles et PC”\r<br>4.5/5 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gameblog.fr/tests/2227-project-cars-pc-ps4-xbox-one\" target=\"_blank\" rel=\"noreferrer\"  >Gameblog</a>\r<br>\r<br>“Project CARS é destinato a diventare modello di riferimento per qualsiasi produzione futura”\r<br>9.5/10 – <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.gamesoul.it/2015/05/06/project-cars-recensione/\" target=\"_blank\" rel=\"noreferrer\"  >Gamesoul</a>\r<br>",
-			"header_image": "http://cdn.akamai.steamstatic.com/steam/apps/234630/header.jpg?t=1470909633",
+			"header_image": "images/pcars.png",
 			"website": "http://www.projectcarsgame.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows Vista, Windows 7 with latest Service Packs\r<br></li><li><strong>Processor:</strong> 2.66 GHz Intel Core 2 Quad Q8400, 3.0 GHz AMD Phenom II X4 940\r<br></li><li><strong>Memory:</strong> 4 GB RAM\r<br></li><li><strong>Graphics:</strong> nVidia GTX 260, ATI Radeon HD 5770\r<br></li><li><strong>DirectX:</strong> Version 9.0\r<br></li><li><strong>Network:</strong> Broadband Internet connection\r<br></li><li><strong>Storage:</strong> 25 GB available space\r<br></li><li><strong>Sound Card:</strong> DirectX compatible sound card\r<br></li><li><strong>Additional Notes:</strong> For racing wheel support check:  <a href=\"https://steamcommunity.com/linkfilter/?url=http://www.projectcarsgame.com/beyond-reality.html\" target=\"_blank\" rel=\"noreferrer\"  >http://www.projectcarsgame.com/beyond-reality.html</a>\r</li></ul>",
@@ -43,7 +44,7 @@
 				"BANDAI NAMCO Entertainment"
 			],
 			"country": [
-				"UK"
+				"United Kingdom","GBR"
 			],
 			"price_overview": {
 				"currency": "EUR",

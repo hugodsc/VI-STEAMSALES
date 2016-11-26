@@ -1,10 +1,16 @@
 $(document).ready(function() {
     csgo.parsed_data = parse_json(csgo.players, csgo.price);
-    witcher3.parse_data = parse_json(witcher3.players, witcher3.price);
+    witcher3.parsed_data = parse_json(witcher3.players, witcher3.price);
+    asseto.parsed_data = parse_json(asseto.players, asseto.price);
+    banner.parsed_data = parse_json(banner.players, banner.price);
+    gta.parsed_data = parse_json(gta.players, gta.price);
+    pcars.parsed_data = parse_json(pcars.players, pcars.price);
 
     //Debug only, to be executed by DOM events
-    line_chart(csgo.parsed_data, witcher3.parse_data);
-    line_chart_price(csgo.parsed_data, witcher3.parse_data);
+	//line_chart_players(csgo.parsed_data,'blue', witcher3.parse_data, 'yellow');
+	//line_chart_players();
+    //line_chart_price(csgo.parsed_data,'red', witcher3.parse_data, 'black');
+	//map_chart(/*csgo.details,*/witcher3.details);
 });
 
 function parse_json(input_historic, input_price) {
@@ -41,3 +47,4 @@ function parseDate(input) {
 function normalizePrice(data) {
     for (var i = 0; i < data.data.length; i++) {}
 }
+

@@ -1,3 +1,7 @@
+body {
+    overflow:hidden;
+}
+
 .margin-top {
     margin-top: 15px;
 }
@@ -28,8 +32,8 @@
 }
 
 .icon-holding img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
 
 .align-text-center {
@@ -58,4 +62,20 @@
 
 .big-row {
     height: 800px;
+}
+
+
+.line_chart svg {
+    width: 575px;
+    height: 329px;
+    
+}
+
+/* Game Inspection */
+.panel-heading {
+    font-weight: bold;
+}
+
+#game-selected-header span {
+   font-weight: bold;
 }
