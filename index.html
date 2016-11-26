@@ -20,12 +20,15 @@
         </p>
         <h2>
             Hello, <span data-bind='text: fullName'></span>
-            !
-        
         </h2>
     </div>
+    <a data-bind="attr: { href: url, title: details }">
+    Report
+</a>
+
+<img width="30px" height="30px" data-bind="attr:{src: imagePath}" /> 
+
     <div class="container-fluid margin-top">
-        <!-- <h1>VI 2016</h1> -->
         <div class="row">
             <div class="col-md-4">
                 <div class="panel panel-default small-row red">
@@ -34,15 +37,9 @@
                     </div>
                 </div>
                 <div class="panel panel-default medium-row green">
-                    <div class="panel-body" id="game-db">
+                    <div class="panel-body" id="game-db" data-bind="foreach: db">
                         <div class="magictime slideRightReturn">
-                            <img src="images/placeholder_gta.png" class="img-circle">
-                        </div>
-                        <div class="magictime slideRightReturn">
-                            <img src="images/placeholder_hotlinemiami.png" class="img-circle">
-                        </div>
-                        <div class="magictime slideRightReturn">
-                            <img src="images/placeholder_thewitcher3.png" class="img-circle">
+                            <img data-bind="attr:{src:details.data.header_image}" /> 
                         </div>
                     </div>
                 </div>
@@ -54,10 +51,12 @@
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-body small-row blue" id="game-selection">
+                    <div class="panel-body small-row blue">
+                        <div class="panel-body" id="game-selection" data-bind="foreach: selection">
                         <div class="magictime slideRightReturn">
-                            <img src="images/placeholder_csgo.png" class="img-circle">
+                            <img data-bind="attr:{src:details.data.header_image}" /> 
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div class="panel panel-default medium-row red">
@@ -75,7 +74,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body small-row green">
                         <div id="game-selected-header">
-                            <img src="images/placeholder_csgo.png" class="img-circle">
+                            <img src="images/csgo.png" class="img-circle">
                             <span>Game Title</span>
                         </div>
                     </div>
@@ -124,12 +123,9 @@
 <script type="text/javascript" src="input/daily_historic_Witcher3.js"></script>
 <script type="text/javascript" src="input/price_historic_Witcher3.js"></script>
 <script type="text/javascript" src="input/players_historic_Witcher3.js"></script>
-
-
-
 <!-- D3 graphics -->
 <script type="text/javascript" src="js/line_chart_player_hitoric.js"></script>
 <script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
-<!-- CUstom Interaction -->
+<!-- Custom Interaction -->
 <script type="text/javascript" src="js/interaction_ko.js"></script>
 </html>
