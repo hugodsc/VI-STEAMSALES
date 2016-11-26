@@ -29,7 +29,7 @@
 				"Rockstar Games"
 			],
 			"country": [
-				"UK"
+				"United Kingdom","UK"
 			],
 			"price_overview": {
 				"currency": "EUR",

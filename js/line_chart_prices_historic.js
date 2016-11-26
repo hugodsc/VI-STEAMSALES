@@ -8,10 +8,12 @@ function line_chart_price() {
         bottom: 20,
         left: 100
     }
+    
     var maxPrice = arguments[0].data[0].price
       , maxDate = parseDate(arguments[0].data[0].date)
       , minDate = parseDate(arguments[0].data[0].date)
       , minPrice = arguments[0].data[0].price
+
     for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
         for (var i = 0; i < arguments[argsCounter].data.length; i++) {
                 if (arguments[argsCounter].data[i].price > maxPrice) {
@@ -43,6 +45,7 @@ function line_chart_price() {
     }).y(function(d) {
         return yScale(d.price);
     }).interpolate("basis");
+
     for (var argsCounter = 0; argsCounter < arguments.length ; argsCounter++){
         vis.append('svg:path').attr('d', lineGen(arguments[argsCounter].data)).attr('stroke', arguments[argsCounter+1]).attr('stroke-width', 2).attr('fill', 'none');
         argsCounter++

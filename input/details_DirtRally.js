@@ -29,7 +29,7 @@
 				"Codemasters"
 			],
 			"country": [
-				"UK"
+				"United Kingdom","GBR"
 			],
 			"price_overview": {
 				"currency": "EUR",

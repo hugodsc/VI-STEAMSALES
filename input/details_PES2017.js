@@ -28,7 +28,7 @@
 				"Konami Digital Entertainment"
 			],
 			"country": [
-				"Japan"
+				"Japan","JPN"
 			],
 			"demos": [
 				{

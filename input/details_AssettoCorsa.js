@@ -34,7 +34,7 @@
 				"Kunos Simulazioni"
 			],
 			"country": [
-				"Italy"
+				"Italy","ITA"
 			],
 			"price_overview": {
 				"currency": "EUR",

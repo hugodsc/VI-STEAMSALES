@@ -52,7 +52,7 @@ var witcher3 =
 				"CD PROJEKT RED"
 			],
 			"country": [
-				"Poland"
+				"Poland","POL"
 			],
 			"price_overview": {
 				"currency": "EUR",

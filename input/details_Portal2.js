@@ -33,7 +33,7 @@
 				"Valve"
 			],
 			"country": [
-				"USA"
+				"United States of America","USA"
 			],
 			"price_overview": {
 				"currency": "USD",

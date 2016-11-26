@@ -43,7 +43,7 @@
 				"Feral Interactive (Mac)"
 			],
 			"country": [
-				"UK"
+				"United Kingdom","GBR"
 			],
 			"demos": [
 				{

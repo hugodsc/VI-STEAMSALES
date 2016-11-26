@@ -33,7 +33,7 @@
 				"Vblank Entertainment, Inc."
 			],
 			"country": [
-				"Canada"
+				"Canada","CAN"
 			],
 			"price_overview": {
 				"currency": "EUR",

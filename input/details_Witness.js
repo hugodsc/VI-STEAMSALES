@@ -26,7 +26,7 @@
 				"Thekla, Inc."
 			],
 			"country": [
-				"USA"
+				"United States of America","USA"
 			],
 			"price_overview": {
 				"currency": "EUR",
