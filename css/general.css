@@ -1,34 +1,10 @@
+/* General layout */
 body {
     overflow:hidden;
 }
 
 .margin-top {
     margin-top: 15px;
-}
-
-#game-db div {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#game-db div img {
-    width: 90px;
-    height: 90px;
-}
-
-#game-selection div {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#game-selection div img {
-    width: 45px;
-    height: 45px;
-}
-
-#game-selected-header img {
-    width: 45px;
-    height: 45px;
 }
 
 .icon-holding img {
@@ -54,21 +30,57 @@ body {
 
 .small-row {
     height: 75px;
+    max-height: 75px;
 }
 
 .medium-row {
     height: 400px;
+    /* max-height: 400px; */
+    /* overflow-y: scroll; */
 }
+
+/*.medium-row .panel-body {*/
+#game-db {
+    overflow-y: scroll;
+    max-height: 340px;
+}
+    
 
 .big-row {
     height: 800px;
+    max-height: 800px;
 }
 
 
-.line_chart svg {
-    width: 575px;
-    height: 329px;
-    
+/* Game database panel */
+
+#game-db div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#game-db div img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Game selection panel */
+
+#game-selection div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#game-selection div img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Game inspect panel */
+
+#game-selected-header img {
+    width: 45px;
+    height: 45px;
 }
 
 /* Game Inspection */
@@ -84,4 +96,11 @@ body {
 .selection-icon {
     border: 3px;
     border-style: solid;
+}
+
+/* Line charts */
+
+.line_chart svg {
+    width: 575px;
+    height: 329px;
 }

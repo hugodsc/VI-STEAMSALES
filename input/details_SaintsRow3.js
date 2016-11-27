@@ -1,4 +1,4 @@
-var saintstow3 ={
+var saintsrow3 ={
 	"details": {
 		"id":55230,
 		"success": true,
@@ -34,7 +34,7 @@ var saintstow3 ={
 			"about_the_game": "Years after taking Stilwater for their own, the Third Street Saints have evolved from street gang to household brand name, with Saints sneakers, Saints energy drinks and Johnny Gat bobble head dolls all available at a store near you.<br />\r\n\t\t\t\t\t\tThe Saints are kings of Stilwater, but their celebrity status has not gone unnoticed. The Syndicate, a legendary criminal fraternity with pawns in play all over the globe, has turned its eye on the Saints and demands tribute. Refusing to kneel to the Syndicate, you take the fight to Steelport, a once-proud metropolis reduced to a struggling city of sin under Syndicate control.<br />\r\n\t\t\t\t\t\tTake a tank skydiving, call in a satellite-targeted airstrike on a Mexican wrestling gang, and defend yourself against a highly-trained military force using only a sex toy in the most out- landish gameplay scenarios ever seen, igniting a city-wide war that will set Steelport on fire. Strap it on.",
 			"short_description": "Get ready for the most out-landish gameplay scenarios ever seen as the Third Street Saints take on the Syndicate!",
 			"supported_languages": "Czech, Dutch, English<strong>*</strong>, French, German, Italian, Polish, Russian, Spanish<br><strong>*</strong>languages with full audio support",
-			"header_image": "images/saintstow3.png",
+			"header_image": "images/saintsrow3.png",
 			"website": "http://www.saintsrow.com/",
 			"pc_requirements": {
 				"minimum": "<strong>Minimum:</strong>\r<br>\r<br><ul class=\"bb_ul\"><li><strong>OS:</strong> Windows® XP\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Processor:</strong> 2GHz Dual Core Processor (Intel® Core 2 Duo or AMD Athlon™ X2) or higher\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Memory:</strong> 2GB System RAM or more\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Graphics:</strong> 320MB Video RAM GPU w/ Shader Model 3.0 support.  NVIDIA® GeForce® 8800 series or better.  ATI Radeon™ HD3800 series or better\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>DirectX®:</strong> 9.0c\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Hard Drive:</strong> 10GB\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Sound:</strong> 100% DirectX® 9.0C compliant sound card or equivalent onboard sound\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li><li><strong>Co-Op Play:</strong>NVIDIA® GeForce® 8800 cards require 640MB of Video RAM.  ATI Radeon™ HD3800 cards require 1GB of Video RAM\r<br>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</li></ul><strong></strong>",

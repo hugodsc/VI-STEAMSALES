@@ -6,12 +6,37 @@ function interactVmImplement() {
     self.selected = ko.observable();
     self.colors = ['red', 'black', 'blue', 'yellow', 'green', 'orange'];
     //Populate db
-    self.db.push(csgo);
-    self.db.push(witcher3);
     self.db.push(asseto);
     self.db.push(banner);
+    self.db.push(codbo3);
+    self.db.push(civ5);
+    self.db.push(colinmcrae);
+    self.db.push(csgo);
+    self.db.push(day1);
+    self.db.push(dirtRally);
+    self.db.push(drugwars);
+    self.db.push(fm2016);
+    self.db.push(godus);
     self.db.push(gta);
+    self.db.push(infestation);
+    self.db.push(insurgency);
+    self.db.push(nomansky);
+    self.db.push(pes2017);
+    self.db.push(portal2);
     self.db.push(pcars);
+    self.db.push(retrocity);
+    self.db.push(rocketleague);
+    self.db.push(saintsrow3);
+    self.db.push(shadowrun);
+    self.db.push(shipsimulator);
+    self.db.push(shogun2);
+    self.db.push(skyrim);
+    self.db.push(skyscraper);
+    self.db.push(speedrunners);
+    self.db.push(swapper);
+    self.db.push(tunnelrats);
+    self.db.push(witcher3);
+    self.db.push(witness);
     self.db.valueHasMutated();
     //Util
     self.editingId = ko.observable();
@@ -117,9 +142,7 @@ function isGameSelection(elm) {
 function isGameDB(elm) {
     return elm.id == "game-db" ? true : false;
 }
-
 function debugeer(arg1, arg2, arg3) {
     console.log('debug');
-
     //data-bind="style: { backgroundColor: debugeer()}"
 }

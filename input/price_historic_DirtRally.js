@@ -1,4 +1,4 @@
-dirtrally.price={
+dirtRally.price={
     "success": true,
     "data": {
         "formatted": {

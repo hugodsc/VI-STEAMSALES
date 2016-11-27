@@ -5,11 +5,11 @@ function line_chart_players() {
         return;
     var vis = d3.select("#visualisation_players")
       , WIDTH = $(elm).width()
-      , HEIGHT = $(elm).height() - 15
+      , HEIGHT = $(elm).height() - 5
       , MARGINS = {
         top: 20,
         right: 10,
-        bottom: 5,
+        bottom: 20,
         left: 55
     }
     var maxPlayers = arguments[0].data[0].players

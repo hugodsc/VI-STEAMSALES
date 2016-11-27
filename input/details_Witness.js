@@ -1,4 +1,4 @@
-var witness{
+var witness = {
 	"details": {
 		"id":210970,
 		"success": true,

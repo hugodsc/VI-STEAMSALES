@@ -1,4 +1,4 @@
-dirtrally.daily={
+dirtRally.daily={
     "start": 1479235200,
     "end": 1479840000,
     "step": 600,

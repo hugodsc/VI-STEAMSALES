@@ -1,4 +1,4 @@
-skyscrapper.price={
+skyscraper.price={
     "success": true,
     "data": {
         "formatted": {
