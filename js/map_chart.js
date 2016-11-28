@@ -1,6 +1,5 @@
 var parsedCountryData = [];
 
-
 function map_chart(){
 	parsedCountryData = [];
 	d3.select('#map').selectAll('*').remove();

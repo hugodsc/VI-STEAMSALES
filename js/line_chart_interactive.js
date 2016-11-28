@@ -7,10 +7,9 @@ function line_chart_interactive() {
         */
 var margin = {top: 20, right: 200, bottom: 100, left: 50},
     margin2 = { top: 430, right: 10, bottom: 20, left: 40 },
-    width = 760 - margin.left - margin.right,
+    width = 910 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
     height2 = 500 - margin2.top - margin2.bottom;
-
 
     var parseDate = d3.time.format("%Y%m%d").parse;
     var bisectDate = d3.bisector(function(d) { return d.date; }).left;

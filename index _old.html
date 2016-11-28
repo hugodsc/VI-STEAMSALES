@@ -13,67 +13,44 @@
 </head>
 <body>
     <div class="container-fluid margin-top">
-        <div class="row small-row">
-            <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-3">
                 <div class="panel panel-default small-row red">
-                    <div class="panel-body align-text-center" id="game-selection">
-                        <div class="col-md-3">
-                            <span>RATINGS | PRICES | PLAYERS</span>
-                        </div>
-                        <div class="col-md-9 game-selection-div">
-                            <!-- ko if: selection().length < 1 -->
-                            <img src="images/drag_icons.png"/>
-                            <!-- /ko -->
-                            <!-- ko foreach: selection -->
-                            <div class="magictime vanishIn">
-                                <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.colors[$index()]}"/>
-                            </div>
-                            <!-- /ko -->
-                        </div>
+                    <div class="panel-body align-text-center">
+                        <span>RATINGS | PRICES | PLAYERS</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="panel panel-default small-row red">
+                <div class="panel panel-default medium-row green">
+                    <div class="panel-heading">Available Games</div>
                     <div class="panel-body" id="game-db" data-bind="foreach: db">
                         <div class="magictime vanishIn">
                             <img data-bind="attr:{src:details.data.header_image}"/>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row medium-row">
-            <div class="col-md-4">
-                <div class="panel panel-default medium-row green">
+                <div class="panel panel-default bottom-row blue">
                     <div class="panel-heading">Genre filter</div>
-                    <div class="panel-body panel-height align-text-center">
+                    <div class="panel-body align-text-center">
                         <span>TAG CLOUD</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default medium-row green">
-                    <div class="panel-heading">Worldwide distribution</div>
-                    <div class="panel-body panel-height align-text-center">
-                        <div id="map"></div>
+            <div class="col-md-5">
+                <div class="panel panel-default small-row blue">
+                    <div class="panel-body " id="game-selection">
+                        <!-- ko if: selection().length < 1 -->
+                        <img src="images/drag_icons.png"/>
+                        <!-- /ko -->
+                        <!-- ko foreach: selection -->
+                        <div class="magictime vanishIn">
+                            <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.colors[$index()]}"/>
+                        </div>
+                        <!-- /ko -->
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default medium-row green">
-                    <div class="panel-heading">Game XXX description</div>
-                    <div class="panel-body panel-height" id="game-selected-description">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row bottom-row">
-            <div class="col-md-6">
-                <div class="panel panel-default bottom-row green">
+                <div class="panel panel-default medium-row red">
                     <div class="panel-heading">Players over time</div>
-                    <div>
+                    <div class="panel-body align-text-center">
                         <!-- ko if: selection().length < 1 -->
                         <img src="images/graph_zone.png"/>
                         <!-- /ko -->
@@ -84,11 +61,31 @@
                         <!-- /ko -->
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
                 <div class="panel panel-default bottom-row green">
                     <div class="panel-heading">Price over time</div>
                     <div id="line_chart_interactive"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default small-row green">
+                    <div class="panel-body">
+                        <div id="game-selected-header">
+                            <img src="images/csgo.png" class="img-circle">
+                            <span>Game Title</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default medium-row blue">
+                    <div class="panel-heading">Game description</div>
+                    <div class="panel-body" id="game-selected-description">
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    </div>
+                </div>
+                <div class="panel panel-default bottom-row red">
+                    <div class="panel-heading">Worldwide distribution</div>
+                    <div class="panel-body align-text-center">
+                        <div id="map"></div>
+                    </div>
                 </div>
             </div>
         </div>

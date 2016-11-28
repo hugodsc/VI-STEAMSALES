@@ -31,38 +31,43 @@ body {
 }
 
 .red {
-    /*background-color: #f2dede;*/
+    background-color: #f2dede;
 }
 
 .blue {
-    /*background-color: #d9edf7;*/
+    background-color: #d9edf7;
 }
 
 .green {
-    /*background-color: #dff0d8;*/
+    background-color: #dff0d8;
 }
 
 .small-row {
-    height: 75px;
+    height: 90px;
     max-height: 75px;
     background-color: rgba(255,255,255,0.3);
 }
 
 .medium-row {
-    height: 300px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.panel-height {
+    height: 270px;
     background-color: rgba(255,255,255,0.3);
 }
 
 /*.medium-row .panel-body {*/
 #game-db {
     overflow-y: scroll;
-    max-height: 257px;
+    max-height: 67px;
 }
 
 .bottom-row {
     height: 550px;
     background-color: rgba(255,255,255,0.3);
 }
+
 
 
 /* Game database panel */
@@ -73,18 +78,23 @@ body {
 }
 
 #game-db div img {
-    width: 90px;
-    height: 90px;
+    width: 55px;
+    height: 55px;
 }
 
 /* Game selection panel */
 
 #game-selection div {
     display: inline-block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
-#game-selection div img {
+#game-selection .game-selection-div {
+    display: inline-block;
+    /* margin-right: 10px; */
+}
+
+#game-selection div img.selection-icon {
     width: 45px;
     height: 45px;
 }
@@ -94,6 +104,10 @@ body {
 #game-selected-header img {
     width: 45px;
     height: 45px;
+}
+
+#game-selected-description {
+    text-align: justify;
 }
 
 /* Game Inspection */
@@ -114,6 +128,6 @@ body {
 /* Line charts */
 
 .line_chart svg {
-    width: 740px;
-    height: 230px;
+    width: 918px;
+    height: 478px;
 }

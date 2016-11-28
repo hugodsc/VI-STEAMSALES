@@ -48,6 +48,7 @@ function interactVmImplement() {
 ko.applyBindings(vm);
 window.onload = function() {
     map_chart();
+    
     dragula([document.getElementById('game-db'), document.getElementById('game-selection')], {
         isContainer: function(el) {
             return false;
@@ -82,7 +83,7 @@ window.onload = function() {
         //UI fix&animation
         $(el).addClass('icon-holding');
         $(el).removeClass('magictime');
-        vm.editingId = ko.contextFor(el).$data.details.id;
+        vm.editingId = ko.contextFor(el).$data.editingId;
     }).on('dragend', function(el) {
         //UI fix&animation
         $(el).addClass('icon-holding');

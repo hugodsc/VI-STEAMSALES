@@ -4,8 +4,8 @@ function line_chart_players() {
     if (arguments.length == 0)
         return;
     var vis = d3.select("#visualisation_players")
-      , WIDTH = $(elm).width()
-      , HEIGHT = $(elm).height() - 5
+      , WIDTH = 912
+      , HEIGHT = 444
       , MARGINS = {
         top: 20,
         right: 10,
