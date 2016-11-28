@@ -8,20 +8,20 @@ function interactVmImplement() {
     //Populate db
     self.db.push(asseto);
     self.db.push(banner);
-    self.db.push(codbo3);
+    //self.db.push(codbo3);
     self.db.push(civ5);
     self.db.push(colinmcrae);
     self.db.push(csgo);
     self.db.push(day1);
-    self.db.push(dirtRally);
+    //self.db.push(dirtRally);
     self.db.push(drugwars);
-    self.db.push(fm2016);
+    //self.db.push(fm2016);
     self.db.push(godus);
     self.db.push(gta);
     self.db.push(infestation);
     self.db.push(insurgency);
-    self.db.push(nomansky);
-    self.db.push(pes2017);
+    //self.db.push(nomansky);
+    //self.db.push(pes2017);
     self.db.push(portal2);
     self.db.push(pcars);
     self.db.push(retrocity);
@@ -145,4 +145,26 @@ function isGameDB(elm) {
 function debugeer(arg1, arg2, arg3) {
     console.log('debug');
     //data-bind="style: { backgroundColor: debugeer()}"
+}
+function parse_line_chart_interactive() {
+    var data_parsed = {
+        data: []
+    };
+    //populate date
+    date_array = vm.selection()[0].parsed_data.data.map(function(a) {
+        return a.date_default;
+    });
+    for (var i = 0; i < 730; i++) {
+        var json = {};
+        json.date = date_array[i];
+        for (var j = 0; j < vm.selection().length; j++) {
+            $.extend(json, constructJson(vm.selection()[j].details.data.name, vm.selection()[j].parsed_data.data[i].price));
+        }
+        data_parsed.data.push(json);
+    }
+}
+function constructJson(jsonKey, jsonValue) {
+    var jsonObj = {};
+    jsonObj[jsonKey] = jsonValue;
+    return jsonObj;
 }

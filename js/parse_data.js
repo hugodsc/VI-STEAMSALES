@@ -1,20 +1,20 @@
 $(document).ready(function() {
     asseto.parsed_data = parse_json(asseto.players, asseto.price);
     banner.parsed_data = parse_json(banner.players, banner.price);
-    codbo3.parsed_data = parse_json(codbo3.players, codbo3.price);
+    //codbo3.parsed_data = parse_json(codbo3.players, codbo3.price);
     civ5.parsed_data = parse_json(civ5.players, civ5.price);
     colinmcrae.parsed_data = parse_json(colinmcrae.players, colinmcrae.price);
     csgo.parsed_data = parse_json(csgo.players, csgo.price);
     day1.parsed_data = parse_json(day1.players, day1.price);
-    dirtRally.parsed_data = parse_json(dirtRally.players, dirtRally.price);
+    //dirtRally.parsed_data = parse_json(dirtRally.players, dirtRally.price);
     drugwars.parsed_data = parse_json(drugwars.players, drugwars.price);
-    fm2016.parsed_data = parse_json(fm2016.players, fm2016.price);
+    //fm2016.parsed_data = parse_json(fm2016.players, fm2016.price);
     godus.parsed_data = parse_json(godus.players, godus.price);
     gta.parsed_data = parse_json(gta.players, gta.price);
     infestation.parsed_data = parse_json(infestation.players, infestation.price);
     insurgency.parsed_data = parse_json(insurgency.players, insurgency.price);
-    nomansky.parsed_data = parse_json(nomansky.players, nomansky.price);
-    pes2017.parsed_data = parse_json(pes2017.players, pes2017.price);
+    //nomansky.parsed_data = parse_json(nomansky.players, nomansky.price);
+    //pes2017.parsed_data = parse_json(pes2017.players, pes2017.price);
     portal2.parsed_data = parse_json(portal2.players, portal2.price);
     pcars.parsed_data = parse_json(pcars.players, pcars.price);
     retrocity.parsed_data = parse_json(retrocity.players, retrocity.price);
@@ -40,29 +40,30 @@ $(document).ready(function() {
     // map_chart(csgo.details,witcher3.details)
 });
 function parse_json(input_historic, input_price) {
-    var player_historic_filtered = {
+    var data_parsed = {
         data: []
     };
     _.each(input_historic.players, function(e, i) {
         if (e != null ) {
-            player_historic_filtered.data.push({
+            data_parsed.data.push({
+                date_default : moment((input_historic.start + input_historic.step * i) * 1000).format("YYYYMMDD"),
                 date: moment((input_historic.start + input_historic.step * i) * 1000).format("DD-MM-YY"),
                 players: e
             });
         }
-    }, player_historic_filtered);
+    }, data_parsed);
     var currentPrice = input_price.data.initial[0][1]
-    player_historic_filtered.data[0].price = currentPrice
-    for (var j = 1; j < player_historic_filtered.data.length; j++) {
-        var date = player_historic_filtered.data[j].date;
+    data_parsed.data[0].price = currentPrice
+    for (var j = 1; j < data_parsed.data.length; j++) {
+        var date = data_parsed.data[j].date;
         for (var i = 0; i < input_price.data.final.length; i++) {
             if (moment(input_price.data.final[i][0]).format("DD-MM-YY") == date) {
-                currentPrice = input_price.data.final[i][1]
+                currentPrice = input_price.data.final[i][1];
             }
-            player_historic_filtered.data[j].price = currentPrice
+            data_parsed.data[j].price = currentPrice;
         }
     }
-    return player_historic_filtered;
+    return data_parsed;
 }
 function parseDate(input) {
     var parts = input.split("-");
