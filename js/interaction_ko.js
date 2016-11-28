@@ -47,6 +47,7 @@ function interactVmImplement() {
 ;vm = new interactVmImplement();
 ko.applyBindings(vm);
 window.onload = function() {
+    map_chart();
     dragula([document.getElementById('game-db'), document.getElementById('game-selection')], {
         isContainer: function(el) {
             return false;
@@ -93,30 +94,37 @@ window.onload = function() {
         case 0:
             line_chart_players();
             line_chart_price();
+            map_chart();
             break;
         case 1:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0]);
+            map_chart(vm.selection()[0].details)
             break;
         case 2:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
+            map_chart(vm.selection()[0].details,vm.selection()[1].details)
             break;
         case 3:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
+            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details)
             break;
         case 4:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
+            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details)
             break;
         case 5:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
+            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details)
             break;
         case 6:
             line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
             line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
+            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details,vm.selection()[5].details)
         }
     }).on('drop', function(el, target, source, sibling) {
         //Adding to selection

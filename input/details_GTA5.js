@@ -31,7 +31,7 @@ var gta=
 				"Rockstar Games"
 			],
 			"country": [
-				"United Kingdom","UK"
+				"United Kingdom","GBR"
 			],
 			"price_overview": {
 				"currency": "EUR",

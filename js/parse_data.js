@@ -69,6 +69,3 @@ function parseDate(input) {
     var parts = input.split("-");
     return new Date(20 + parts[2],parts[1] - 1,parts[0]);
 }
-function normalizePrice(data) {
-    for (var i = 0; i < data.data.length; i++) {}
-}

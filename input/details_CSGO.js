@@ -26,7 +26,7 @@ var csgo = {
             },
             "developers": ["Valve"],
             "publishers": ["Valve"],
-            "country": ["USA"],
+            "country": ["United States of America","USA"],
             "price_overview": {
                 "currency": "USD",
                 "initial": 1499,

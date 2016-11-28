@@ -48,7 +48,7 @@ var fm2016=
 				"SEGA"
 			],
 			"country": [
-				"UNited Kingdom","GBR"
+				"United Kingdom","GBR"
 			],
 			"demos": [
 				{
