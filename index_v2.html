@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/dragula/dragula.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/d3-geomap/css/d3.geomap.css">
+    <link rel="stylesheet" href="lib/magic-master/magic.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/line_chart.css">
+    <link rel="stylesheet" href="css/line_chart_interactive.css">
+</head>
+<body>
+    <!-- 1st Row -->
+    <div class="container-fluid margin-top">
+        <div class="row small-row">
+            <!-- Selection Zone -->
+            <div class="col-md-4">
+                <div class="panel panel-default small-row red">
+                    <div class="panel-body align-text-center game-selection-div" id="game-selection">
+                        <!-- ko if: selection().length < 1 -->
+                        <div class="empty-selection"></div>
+                        <!-- /ko -->
+                        <!-- ko foreach: selection -->
+                        <div class="magictime vanishIn">
+                            <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.getColor($index)}, click: selectElement"/>
+                        </div>
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+            <!-- DB Zone -->
+            <div class="col-md-8">
+                <div class="panel panel-default small-row red">
+                    <div class="panel-body" id="game-db" data-bind="foreach: db">
+                        <tbody data-bind="foreach: db">
+                            <div class="magictime vanishIn">
+                                <img data-bind="attr:{src:details.data.header_image}, click: selectElement"/>
+                            </div>
+                        </tbody>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd Row -->
+        <div class="row medium-row">
+            <div class="col-md-4">
+                <div class="panel panel-default medium-row green">
+                    <div class="panel-heading">Genre filter</div>
+                    <div class="panel-body panel-height align-text-center">
+                        <div id="tag_cloud"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default medium-row green">
+                    <div class="panel-heading">Worldwide distribution</div>
+                    <div class="panel-body panel-height align-text-center">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default medium-row green">
+                    <!-- ko ifnot: selected() -->
+                    <div class="empty-selected"></div>
+                    <!-- /ko -->
+                    <!-- ko if: selected() -->
+                    <div class="panel-heading">
+                        <span data-bind="text: selected().details.data.name"></span>
+                    </div>
+                    <div class="panel-body panel-height" id="game-selected-description">
+                        <strong>Description </strong>
+                        <span data-bind="text: selected().details.data.short_description"></span>
+                        <br>
+                        <strong>Developer </strong>
+                        <span data-bind="text: selected().details.data.developers[0]"></span>
+                        <br>
+                        <strong>Publisher </strong>
+                        <span data-bind="text: selected().details.data.publishers[0]"></span>
+                        <br>
+                        <strong>Genre </strong>
+                        (NEED FIX)
+                    <span data-bind="text: selected().details.data.genres[0]"></span>
+                        <br>
+                        <strong>Country </strong>
+                        <span data-bind="text: selected().details.data.country[0]"></span>
+                        <br>
+                        <strong>Metacritic score </strong>
+                        <span data-bind="text: selected().details.data.metacritic.score"></span>
+                        <br>
+                        <strong>Total recommendations </strong>
+                        <span data-bind="text: selected().details.data.recommendations.total"></span>
+                        <br>
+                        <strong>Release date </strong>
+                        <span data-bind="text: selected().details.data.release_date.date"></span>
+                        <br>
+                        <strong>Website </strong>
+                        <span data-bind="text: selected().details.data.website"></span>
+                        <br>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+        <!-- 3rd Row -->
+        <div class="row bottom-row">
+            <div class="col-md-6">
+                <div class="panel panel-default bottom-row green">
+                    <div class="panel-heading">Players over time</div>
+                    <!-- ko if: selection().length < 1 -->
+                    <img src="images/graph_zone.png"/>
+                    <!-- /ko -->
+                    <!-- ko ifnot: selection().length < 1 -->
+                    <div id="player_chart"></div>
+                    <!-- /ko -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default bottom-row green">
+                    <div class="panel-heading">Price over time</div>
+                    <!-- ko if: selection().length < 1 -->
+                    <img src="images/graph_zone.png"/>
+                    <!-- /ko -->
+                    <!-- ko ifnot: selection().length < 1 -->
+                    <div id="price_chart"></div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Libraries used -->
+<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+<script type='text/javascript' src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type='text/javascript' src='lib/knockout-3.4.1.js'></script>
+<script type="text/javascript" src="lib/underscore-min.js"></script>
+<script type="text/javascript" src="lib/moment.js"></script>
+<script type="text/javascript" src="lib/dragula/dragula.min.js"></script>
+<script type="text/javascript" src="lib/jqueryui/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="lib/d3.v3.min.js" charset="utf-8"></script>
+<script src="lib/d3.layout.cloud.js"></script>
+<!-- 
+<script src="lib/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+<script src="lib/d3-geomap/js/d3.geomap.min.js"></script> 
+-->
+<!-- Includes for custom JS -->
+<!-- Parser -->
+<script type="text/javascript" src="js/parse_data.js"></script>
+<!-- Database -->
+<script type="text/javascript" src="input/data.js"></script>
+<!-- D3 graphics -->
+<script type="text/javascript" src="js/price_chart.js"></script>
+<script type="text/javascript" src="js/player_chart.js"></script>
+<script type="text/javascript" src="js/tag_cloud.js"></script>
+
+<!--
+<script type="text/javascript" src="js/line_chart_player_historic.js"></script>
+<script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
+<script type="text/javascript" src="js/map_chart.js"></script>
+-->
+<!-- Custom Interaction -->
+<script type="text/javascript" src="js/interaction_ko_v2.js"></script>
+</html>

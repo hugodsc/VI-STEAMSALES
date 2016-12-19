@@ -8,9 +8,9 @@ function interactVmImplement() {
     //Populate db
     self.db.push(asseto);
     self.db.push(banner);
-    //self.db.push(codbo3);
+    ////self.db.push(codbo3);
     self.db.push(civ5);
-    self.db.push(colinmcrae);
+    //self.db.push(colinmcrae);
     self.db.push(csgo);
     self.db.push(day1);
     //self.db.push(dirtRally);
@@ -47,7 +47,7 @@ function interactVmImplement() {
 ;vm = new interactVmImplement();
 ko.applyBindings(vm);
 window.onload = function() {
-    map_chart();
+    //map_chart();
     
     dragula([document.getElementById('game-db'), document.getElementById('game-selection')], {
         isContainer: function(el) {
@@ -91,42 +91,42 @@ window.onload = function() {
         vm.db.valueHasMutated();
         vm.selection.valueHasMutated();
         //call draw map with correct amount of arguments
-        switch (vm.selection().length) {
-        case 0:
-            line_chart_players();
-            line_chart_price();
-            map_chart();
-            break;
-        case 1:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0]);
-            map_chart(vm.selection()[0].details)
-            break;
-        case 2:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
-            map_chart(vm.selection()[0].details,vm.selection()[1].details)
-            break;
-        case 3:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
-            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details)
-            break;
-        case 4:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
-            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details)
-            break;
-        case 5:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
-            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details)
-            break;
-        case 6:
-            line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
-            line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
-            map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details,vm.selection()[5].details)
-        }
+        //switch (vm.selection().length) {
+        //case 0:
+        //    line_chart_players();
+        //    line_chart_price();
+        //    map_chart();
+        //    break;
+        //case 1:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0]);
+        //    map_chart(vm.selection()[0].details)
+        //    break;
+        //case 2:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1]);
+        //    map_chart(vm.selection()[0].details,vm.selection()[1].details)
+        //    break;
+        //case 3:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2]);
+        //    map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details)
+        //    break;
+        //case 4:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3]);
+        //    map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details)
+        //    break;
+        //case 5:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4]);
+        //    map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details)
+        //    break;
+        //case 6:
+        //    line_chart_players(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
+        //    line_chart_price(vm.selection()[0].parsed_data, vm.colors[0], vm.selection()[1].parsed_data, vm.colors[1], vm.selection()[2].parsed_data, vm.colors[2], vm.selection()[3].parsed_data, vm.colors[3], vm.selection()[4].parsed_data, vm.colors[4], vm.selection()[5].parsed_data, vm.colors[5]);
+        //    map_chart(vm.selection()[0].details,vm.selection()[1].details,vm.selection()[2].details,vm.selection()[3].details,vm.selection()[4].details,vm.selection()[5].details)
+        //}
     }).on('drop', function(el, target, source, sibling) {
         //Adding to selection
         if (isGameSelection(target)) {
@@ -160,14 +160,14 @@ function parse_line_chart_interactive() {
         data: []
     };
     //populate date
-    date_array = vm.selection()[0].parsed_data.data.map(function(a) {
+    date_array = vm.db()[0].parsed_data.data.map(function(a) {
         return a.date_default;
     });
     for (var i = 0; i < 730; i++) {
         var json = {};
         json.date = date_array[i];
-        for (var j = 0; j < vm.selection().length; j++) {
-            $.extend(json, constructJson(vm.selection()[j].details.data.name, vm.selection()[j].parsed_data.data[i].price));
+        for (var j = 0; j < vm.db().length; j++) {
+            $.extend(json, constructJson(vm.db()[j].details.data.name, vm.db()[j].parsed_data.data[i].players));
         }
         data_parsed.data.push(json);
     }

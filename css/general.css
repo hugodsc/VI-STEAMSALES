@@ -1,6 +1,6 @@
 /* Override boostrap */
 .panel {
-    margin-bottom: 7px;    
+    margin-bottom: 7px;
 }
 
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
@@ -10,11 +10,12 @@
 
 /* General layout */
 body {
-   /* overflow:hidden;*/
+     overflow:hidden;
     background-image: url("../images/back_1.png");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
 }
 
 .margin-top {
@@ -22,8 +23,8 @@ body {
 }
 
 .icon-holding img {
-    width: 175px;
-    height: 175px;
+    width: 55px;
+    height: 55px;
 }
 
 .align-text-center {
@@ -68,10 +69,7 @@ body {
     background-color: rgba(255,255,255,0.3);
 }
 
-
-
 /* Game database panel */
-
 #game-db div {
     display: inline-block;
     margin-right: 10px;
@@ -83,6 +81,15 @@ body {
 }
 
 /* Game selection panel */
+.empty-selection {
+    background-image: url("../images/drag_icons.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*444 45*/
+    width: 444px;
+    height: 45px;
+}
 
 #game-selection div {
     display: inline-block;
@@ -100,7 +107,6 @@ body {
 }
 
 /* Game inspect panel */
-
 #game-selected-header img {
     width: 45px;
     height: 45px;
@@ -110,13 +116,24 @@ body {
     text-align: justify;
 }
 
+.empty-selected {
+    background-image: url("../images/drag_icons.png");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*444 45*/
+    /* width: 444px; */
+    height: 311px;
+}
+
+
 /* Game Inspection */
 .panel-heading {
     font-weight: bold;
 }
 
 #game-selected-header span {
-   font-weight: bold;
+    font-weight: bold;
 }
 
 /* Selection Zone */
@@ -126,7 +143,6 @@ body {
 }
 
 /* Line charts */
-
 .line_chart svg {
     width: 918px;
     height: 478px;

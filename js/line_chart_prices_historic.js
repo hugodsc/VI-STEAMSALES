@@ -1,5 +1,5 @@
 function line_chart_price() {
-    var elm = "#visualisation_price";
+    var elm = "#line_chart_interactive";
     d3.select(elm).selectAll('*').remove();
     if(arguments.length == 0) return;
     var vis = d3.select(elm)

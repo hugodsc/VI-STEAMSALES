@@ -3,9 +3,6 @@ var frequency_list = [{"text":"Indie","size":15,"color":"#c266ba"},{"text":"Raci
 ,{"text":"Adventure","size":15,"color":"#66c2a5"},{"text":"Early Access","size":15,"color":"#66c2a5"},{"text":"Massively Multiplayer","size":15,"color":"#66c2a5"},{"text":"Casual","size":15,"color":"#66c2a5"}];
 
 var mychart = d3.select("#tag_cloud");
-var rect = mychart[0][0].getBoundingClientRect();
-var w = rect.right-rect.left
-var h = rect.top
 
 d3.layout.cloud().size([380, 220])
         .words(frequency_list)

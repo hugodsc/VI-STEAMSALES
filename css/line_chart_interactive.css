@@ -17,7 +17,7 @@
 }
 
 .legend-box {
-  cursor: pointer;  
+  /*cursor: pointer;  */
 }
 
 #mouse-tracker {
@@ -43,7 +43,7 @@
 
 .tooltip-interactive {
   font-weight: normal;
-  font-size: 10px;
+  font-size: 17px;
 }
 
 .brush .extent {
