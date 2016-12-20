@@ -5,14 +5,44 @@ var frequency_list = [{"text":"Indie","size":30,"color":"#66c2a5"},{"text":"Raci
 var mychart = d3.select("#tag_cloud");
 var width = mychart[0][0].clientWidth
 var height = 270
+
 d3.layout.cloud().size([width, height])
-        .words(frequency_list)
-            .rotate(0)
+        	.words(updateWords(frequency_list))
+        	.padding(5)
+            .rotate(function(d) { return 0; })
+	      	.font('monospace')
+	      	.spiral("archimedean")
+            .text(function(d) { return d.text; }) // THE SOLUTION
             .fontSize(function(d) { return d.size; })
             .on("end", draw)
             .start();
 
-function updateWords(){
+function draw(words) {
+     mychart.append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(" + width/3 + "," +  height/2 + ")")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size + "px"; })
+                .style("fill", function(d) {
+                	return d.color ;})
+               .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+				.on("click", function(d) {
+					alert(d.text);
+				})
+                .text(function(d) { return d.text; });
+               
+    }
+
+function updateWords(list){
 	
 	for (var i = 0; i < frequency_list.length ; i++){
 		frequency_list[i].size = 30;
@@ -40,24 +70,12 @@ function updateWords(){
 					break;
 				}
 			}
-
 			if(!found){
 				genres.push({"genre":elm.details.data.genres[i].description,"totalPlayers":totalPlayers})
 			}
-
 		}
-
 	});
 
-	var cloud = mychart.selectAll("g text").data(frequency_list, function(d) { return d.text; })
-
-	//Entering words
-        cloud.enter()
-            .append("text")
-            .style("font-family", "Impact")
-            .attr("text-anchor", "middle")
-            //.attr('font-size', 1)
-            .text(function(d) { return d.text; });
     if(genres.length == 0){
 		for (var i = 0; i<frequency_list.length;i++){
 			frequency_list[i].size = 30;
@@ -75,38 +93,5 @@ function updateWords(){
 			}
 		}
     }
-		
-	cloud
-		.transition()
-		.style("font-size", function(d) {
-			return d.size+"px";
-		})
-		.style("fill", function(d) {
-			return d.color;
-		})
+	return frequency_list;
 }
-
-function draw(words) {
-     mychart.append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .attr("class", "wordcloud")
-                .append("g")
-                // without the transform, words words would get cutoff to the left and top, they would
-                // appear outside of the SVG area
-                .attr("transform", "translate(" + width/3 + "," +  height/2 + ")")
-                .selectAll("text")
-                .data(words)
-                .enter().append("text")
-                .style("font-size", function(d) { return d.size + "px"; })
-                .style("fill", function(d) {
-                	return d.color ;})
-               .attr("transform", function(d) {
-                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                })
-				.on("click", function(d) {
-					alert(d.text);
-				})
-                .text(function(d) { return d.text; });
-               
-    }
