@@ -34,7 +34,7 @@ var shipsimulator={
 				"Paradox Interactive"
 			],
 			"country": [
-				"Netherlands","NLD"
+				"Germany","DEU"
 			],
 			"demos": [
 				{

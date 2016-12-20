@@ -15,6 +15,8 @@ var map = d3.geomap.choropleth()
                   .colors(['green','#7D26CD'])
                   .column('1800')
                   .domain([0, 1])
+                  .width(622)
+                  .height(270)
                   .legend(false)
                   .unitId('Country')
                   .zoomFactor(6)
@@ -27,21 +29,6 @@ var map = d3.geomap.choropleth()
                   	}
                   	return toReturn
                   });
-                  
-
-function map_chart(){
-	parsedCountryData = [];
-	d3.select('#map').selectAll('*').remove();
-  	if (arguments.length > 0){
-    	for (var i = 0; i < arguments.length ; i++){
-			parsedCountryData.push({1800:"1", Country:arguments[i].data.country[1]/*, Game: arguments[i].data.name*/});
-      	}
-  	}	 	
-   	d3.select('#map')
-    	.datum(parsedCountryData)
-    	.call(map.draw, map);
-    zoomToCountry("ITA")
-}
 
 function zoomToCountry(countryCode){
 	var scale,x,y;
