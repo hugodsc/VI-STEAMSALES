@@ -1,4 +1,4 @@
-var frequency_list = [{"text":"Indie","size":30,"color":"#ffcc99"},{"text":"Racing","size":30,"color":"#ffffcc"},{"text":"Simulation","size":30,"color":"#99ffcc"}
+var frequency_list = [{"text":"Indie","size":30,"color":"#ffcc99"},{"text":"Racing","size":30,"color":"#ffcc99"},{"text":"Simulation","size":30,"color":"#99ffcc"}
 ,{"text":"Sports","size":30,"color":"#ccffcc"},{"text":"RPG","size":30,"color":"#ff9966"},{"text":"Strategy","size":30,"color":"#ff6600"},{"text":"Action","size":30,"color":"#ff0000"}
 ,{"text":"Adventure","size":30,"color":"#66ffcc"},{"text":"Early Access","size":30,"color":"#0066cc"},{"text":"Massively Multiplayer","size":30,"color":"#00ccff"},{"text":"Casual","size":30,"color":"#00ffff"}];
 
@@ -86,7 +86,7 @@ function updateWords(list){
 			console.log(genres[j].genre+" "+genres[j].totalPlayers)
 			for (var i = 0; i<frequency_list.length;i++){
 				if(frequency_list[i].text == genres[j].genre){
-					sizeToAdd = (genres[j].totalPlayers / maxPlayers) * 15
+					sizeToAdd = (genres[j].totalPlayers / maxPlayers) * 25
 					frequency_list[i].size += sizeToAdd;
 					//frequency_list[i].color = "#165dba"
 				}		
