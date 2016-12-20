@@ -1,6 +1,6 @@
-var frequency_list = [{"text":"Indie","size":30,"color":"#66c2a5"},{"text":"Racing","size":30,"color":"#66c2a5"},{"text":"Simulation","size":30,"color":"#66c2a5"}
-,{"text":"Sports","size":30,"color":"#66c2a5"},{"text":"RPG","size":30,"color":"#66c2a5"},{"text":"Strategy","size":30,"color":"#66c2a5"},{"text":"Action","size":30,"color":"#66c2a5"}
-,{"text":"Adventure","size":30,"color":"#66c2a5"},{"text":"Early Access","size":30,"color":"#66c2a5"},{"text":"Massively Multiplayer","size":30,"color":"#66c2a5"},{"text":"Casual","size":30,"color":"#66c2a5"}];
+var frequency_list = [{"text":"Indie","size":30,"color":"#ffcc99"},{"text":"Racing","size":30,"color":"#ffffcc"},{"text":"Simulation","size":30,"color":"#99ffcc"}
+,{"text":"Sports","size":30,"color":"#ccffcc"},{"text":"RPG","size":30,"color":"#ff9966"},{"text":"Strategy","size":30,"color":"#ff6600"},{"text":"Action","size":30,"color":"#ff0000"}
+,{"text":"Adventure","size":30,"color":"#66ffcc"},{"text":"Early Access","size":30,"color":"#0066cc"},{"text":"Massively Multiplayer","size":30,"color":"#00ccff"},{"text":"Casual","size":30,"color":"#00ffff"}];
 
 var mychart = d3.select("#tag_cloud");
 var width = mychart[0][0].clientWidth
@@ -46,7 +46,7 @@ function updateWords(list){
 	
 	for (var i = 0; i < frequency_list.length ; i++){
 		frequency_list[i].size = 30;
-		frequency_list[i].color = "#66c2a5"		
+		//frequency_list[i].color = "#66c2a5"		
 	}
 	
 	var genres = []
@@ -78,16 +78,17 @@ function updateWords(list){
     if(genres.length == 0){
 		for (var i = 0; i<frequency_list.length;i++){
 			frequency_list[i].size = 30;
-			frequency_list[i].color = "#66c2a5"
+			//frequency_list[i].color = "#66c2a5"
 		}
     }
     else{        
 		for(var j = 0; j<genres.length;j++){
+			console.log(genres[j].genre+" "+genres[j].totalPlayers)
 			for (var i = 0; i<frequency_list.length;i++){
 				if(frequency_list[i].text == genres[j].genre){
 					sizeToAdd = (genres[j].totalPlayers / maxPlayers) * 15
 					frequency_list[i].size += sizeToAdd;
-					frequency_list[i].color = "#165dba"
+					//frequency_list[i].color = "#165dba"
 				}		
 			}
 		}
