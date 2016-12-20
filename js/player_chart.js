@@ -4,7 +4,7 @@ function create_player_chart() {
         top: 20,
         right: 200,
         bottom: 100,
-        left: 40
+        left: 55
     }
       , margin2 = {
         top: 430,
