@@ -36,7 +36,7 @@ function draw(words) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                 })
 				.on("click", function(d) {
-					alert(d.text);
+					vm.setFilter(d.text);
 				})
                 .text(function(d) { return d.text; });
                
@@ -63,9 +63,8 @@ function updateWords(list){
 		for(var i = 0; i < elm.details.data.genres.length ; i++){
 			var found = false;
 			for(var j = 0 ; j < genres.length ; j++){
-
 				if(genres[j].genre == elm.details.data.genres[i].description){
-					genres[j].totalPlayers = (genres[j].totalPlayers + totalPlayers) * 15
+					genres[j].totalPlayers = (genres[j].totalPlayers + totalPlayers)
 					found = true;
 					break;
 				}

@@ -117,7 +117,7 @@ body {
 }
 
 .empty-selected {
-    background-image: url("../images/drag_icons.png");
+    background-image: url("../images/inspect_game.png");
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: center center;
