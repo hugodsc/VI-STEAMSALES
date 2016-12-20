@@ -83,7 +83,6 @@ function updateWords(list){
     }
     else{        
 		for(var j = 0; j<genres.length;j++){
-			console.log(genres[j].genre+" "+genres[j].totalPlayers)
 			for (var i = 0; i<frequency_list.length;i++){
 				if(frequency_list[i].text == genres[j].genre){
 					sizeToAdd = (genres[j].totalPlayers / maxPlayers) * 25
