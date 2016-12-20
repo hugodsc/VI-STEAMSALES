@@ -13,6 +13,11 @@ function interactVmImplement() {
     selectElement = function(elm) {
         self.selected(elm);
     }
+    
+     self.selected.subscribe(function() {
+        zoomToCountry(self.selected().details.data.country[1]);
+    });
+    
     //Util
     self.editingId = ko.observable();
     self.getIndex = function(index) {
@@ -38,6 +43,7 @@ $(document).ready(function() {
 });
 //Dragula
 function dragula_setup() {
+    updateWords()
     dragula([document.getElementById('game-db'), document.getElementById('game-selection')], {
         isContainer: function(el) {
             return false;
@@ -70,7 +76,6 @@ function dragula_setup() {
         vm.db.valueHasMutated();
         vm.selection.valueHasMutated();
         //call draw map with correct amount of arguments
-        updateWords()
         switch (vm.selection().length) {
         case 0:
             console.log("Comparing 0 games.");
