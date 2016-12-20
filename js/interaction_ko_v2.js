@@ -5,7 +5,7 @@ function interactVmImplement() {
     self.db = ko.observableArray();
     self.selection = ko.observableArray();
     self.selected = ko.observable();
-    self.colors = ['red', 'black', 'blue', 'yellow', 'green', 'orange'];
+    self.colors = ['#ea1c1c', 'black', '#1e12bc', '#e5d712', '#1de044', '#e5981b'];
 //DB
     self.reset = function() { self.selection.removeAll(); self.db.removeAll();
      _.each(input, function(elm, index, lst) { self.db.push(elm) }); } 

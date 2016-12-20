@@ -11,7 +11,8 @@
 /* General layout */
 body {
      overflow:hidden;
-    background-image: url("../images/back_1.png");
+    /*background-image: url("../images/back_1.png");*/
+    background-color:rgba(255, 223, 172, 0.84);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

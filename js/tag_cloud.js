@@ -8,7 +8,7 @@ var height = 270
 
 d3.layout.cloud().size([width, height])
         	.words(updateWords(frequency_list))
-        	.padding(5)
+        	.padding(3)
             .rotate(function(d) { return 0; })
 	      	.font('monospace')
 	      	.spiral("archimedean")
