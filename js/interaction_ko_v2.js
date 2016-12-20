@@ -7,17 +7,21 @@ function interactVmImplement() {
     self.selected = ko.observable();
     self.colors = ['red', 'black', 'blue', 'yellow', 'green', 'orange'];
     //DB
-    _.each(input, function(elm, index, lst) {
-        self.db.push(elm)
-    });
+    self.reset = function() {
+        self.selection.removeAll();
+        self.db.removeAll();
+        _.each(input, function(elm, index, lst) {
+            self.db.push(elm)
+        });
+        self.selection.removeAll();
+    }
+    self.reset();
     selectElement = function(elm) {
         self.selected(elm);
     }
-    
-     self.selected.subscribe(function() {
+    self.selected.subscribe(function() {
         zoomToCountry(self.selected().details.data.country[1]);
     });
-    
     //Util
     self.editingId = ko.observable();
     self.getIndex = function(index) {

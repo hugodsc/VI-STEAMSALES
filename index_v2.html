@@ -17,16 +17,22 @@
         <div class="row small-row">
             <!-- Selection Zone -->
             <div class="col-md-4">
-                <div class="panel panel-default small-row red">
-                    <div class="panel-body align-text-center game-selection-div" id="game-selection">
-                        <!-- ko if: selection().length < 1 -->
-                        <div class="empty-selection"></div>
-                        <!-- /ko -->
-                        <!-- ko foreach: selection -->
-                        <div class="magictime vanishIn">
-                            <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.getColor($index)}, click: selectElement"/>
+                <div class="col-md-2">
+                <input type="image" data-bind="click: reset" src="images/reset.png" height="77" />
+                    <!-- <button data-bind="click: reset">Reset state</button> -->
+                </div>
+                <div class="col-md-10">
+                    <div class="panel panel-default small-row red">
+                        <div class="panel-body align-text-center game-selection-div" id="game-selection">
+                            <!-- ko if: selection().length < 1 -->
+                            <div class="empty-selection"></div>
+                            <!-- /ko -->
+                            <!-- ko foreach: selection -->
+                            <div class="magictime vanishIn">
+                                <img class="img-circle selection-icon" data-bind="attr:{src:details.data.header_image}, style: { color: $parent.getColor($index)}, click: selectElement"/>
+                            </div>
+                            <!-- /ko -->
                         </div>
-                        <!-- /ko -->
                     </div>
                 </div>
             </div>
@@ -141,17 +147,11 @@
 <script type="text/javascript" src="lib/jqueryui/external/jquery/jquery.js"></script>
 <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="lib/d3.v3.min.js" charset="utf-8"></script>
-
 <!--
 <script src="lib/d3.layout.cloud.js"></script>
 -->
 <script src="lib/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
-
-<script src="lib/d3-geomap/js/d3.geomap.min.js"></script> 
-
-
-
-
+<script src="lib/d3-geomap/js/d3.geomap.min.js"></script>
 <!-- Includes for custom JS -->
 <!-- Parser -->
 <script type="text/javascript" src="js/parse_data.js"></script>
@@ -161,13 +161,11 @@
 <script type="text/javascript" src="js/price_chart.js"></script>
 <script type="text/javascript" src="js/player_chart.js"></script>
 <script type="text/javascript" src="js/tag_cloud.js"></script>
-
 <!--
 <script type="text/javascript" src="js/line_chart_player_historic.js"></script>
 <script type="text/javascript" src="js/line_chart_prices_historic.js"></script>
 -->
 <script type="text/javascript" src="js/map_chart.js"></script>
-
 <!-- Custom Interaction -->
 <script type="text/javascript" src="js/interaction_ko_v2.js"></script>
 </html>
