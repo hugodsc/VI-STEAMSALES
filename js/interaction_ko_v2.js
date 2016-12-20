@@ -6,24 +6,54 @@ function interactVmImplement() {
     self.selection = ko.observableArray();
     self.selected = ko.observable();
     self.colors = ['#ea1c1c', 'black', '#1e12bc', '#e5d712', '#1de044', '#e5981b'];
-//DB
-    self.reset = function() { self.selection.removeAll(); self.db.removeAll();
-     _.each(input, function(elm, index, lst) { self.db.push(elm) }); } 
-     self.setFilter = function(filter)
-      { self.reset();
-       var tmp_db = _.filter(vm.db(), function(elm) { 
-       return vm.containsGenre(elm, filter); }); self.db.removeAll();
-        _.each(tmp_db, function(elm, index, lst) { self.db.push(elm) }); 
+    //DB
+    self.reset = function() {
+        self.selection.removeAll();
+        self.db.removeAll();
+        _.each(input, function(elm, index, lst) {
+            self.db.push(elm)
+        });
+    }
+    self.setFilter = function(filter) {
+        self.reset();
+        var tmp_db = _.filter(vm.db(), function(elm) {
+            return vm.containsGenre(elm, filter);
+        });
+        self.db.removeAll();
+        _.each(tmp_db, function(elm, index, lst) {
+            self.db.push(elm)
+        });
         var tmp_selection = _.filter(vm.selection(), function(elm) {
-             return vm.containsGenre(elm, filter); }); 
-             self.selection.removeAll(); 
-             _.each(tmp_selection, function(elm, index, lst) { self.selection.push(elm) }); } 
-             self.containsGenre = function(obj, genre) 
-             { var genres = obj.details.data.genres; var ret = _.find(genres, function(elm) { 
-             return elm.description == genre }); return ret != null; } 
-             self.reset(); selectElement = function(elm) { self.selected(elm); }
-             self.selected.subscribe(function() { zoomToCountry(self.selected().details.data.country[1]);
-              });
+            return vm.containsGenre(elm, filter);
+        });
+        self.selection.removeAll();
+        _.each(tmp_selection, function(elm, index, lst) {
+            self.selection.push(elm)
+        });
+    }
+
+    self.getAllGenres = function() {
+        var txt = '';
+        _.each(vm.selected().details.data.genres, function(el) {
+            txt += el.description + ", ";
+        });
+        return txt.slice(0, txt.length-2);
+    }
+    
+    self.containsGenre = function(obj, genre) {
+        var genres = obj.details.data.genres;
+        var ret = _.find(genres, function(elm) {
+            return elm.description == genre
+        });
+        return ret != null;
+    }
+    self.reset();
+    selectElement = function(elm) {
+        self.selected(elm);
+    }
+    self.selected.subscribe(function() {
+        zoomToCountry(self.selected().details.data.country[1]);
+    });
     //Util
     self.editingId = ko.observable();
     self.getIndex = function(index) {
