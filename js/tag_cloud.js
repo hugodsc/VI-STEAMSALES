@@ -1,4 +1,4 @@
-var frequency_list = [{"text":"Indie","size":30,"color":"#c266ba"},{"text":"Racing","size":30,"color":"#0ef247"},{"text":"Simulation","size":30,"color":"#66c2a5"}
+var frequency_list = [{"text":"Indie","size":30,"color":"#66c2a5"},{"text":"Racing","size":30,"color":"#66c2a5"},{"text":"Simulation","size":30,"color":"#66c2a5"}
 ,{"text":"Sports","size":30,"color":"#66c2a5"},{"text":"RPG","size":30,"color":"#66c2a5"},{"text":"Strategy","size":30,"color":"#66c2a5"},{"text":"Action","size":30,"color":"#66c2a5"}
 ,{"text":"Adventure","size":30,"color":"#66c2a5"},{"text":"Early Access","size":30,"color":"#66c2a5"},{"text":"Massively Multiplayer","size":30,"color":"#66c2a5"},{"text":"Casual","size":30,"color":"#66c2a5"}];
 
@@ -12,14 +12,42 @@ d3.layout.cloud().size([width, height])
             .on("end", draw)
             .start();
 
-            d3.select("body")
+            /*d3.select("body")
 				.on("keydown", function() {
 					updateWords("Strategy",5)
 				});
+				*/
+function updateWords(){
+	for (var i = 0; i < frequency_list.length ; i++){
+		frequency_list[i].size = 30;
+		frequency_list[i].color = "#66c2a5"		
+	}
 	
-function updateWords(genre, sizeToAdd){
-	var cloud = mychart.selectAll("g text")
-                        .data(frequency_list, function(d) { return d.text; })
+	var genres = []
+	var maxPlayers = 0;
+	_.each(vm.selection(), function(elm, i) {
+		var totalPlayers = 0;
+		for(var i = 0; i < elm.parsed_data.data.length; i++){
+			totalPlayers += elm.parsed_data.data[i].players
+			if(totalPlayers > maxPlayers)
+					maxPlayers=totalPlayers;
+		}
+		for(var i = 0; i < elm.details.data.genres.length ; i++){
+			var found = false;
+			for(var j = 0 ; j < genres.length ; j++){
+				if(genres[j].genre == elm.details.data.genres[i].description){
+					genres[j].totalPlayers = (genres[j].totalPlayers + totalPlayers) * 15
+					found = true;
+					break;
+				}
+			}
+			if(!found){
+				genres.push({"genre":elm.details.data.genres[i].description,"totalPlayers":totalPlayers})
+			}
+		}
+	});
+
+	var cloud = mychart.selectAll("g text").data(frequency_list, function(d) { return d.text; })
 
 	//Entering words
         cloud.enter()
@@ -28,17 +56,32 @@ function updateWords(genre, sizeToAdd){
             .attr("text-anchor", "middle")
             //.attr('font-size', 1)
             .text(function(d) { return d.text; });
-    for (var i = 0; i<frequency_list.length;i++){
-    	if(frequency_list[i].text == genre){
-    		frequency_list[i].size += sizeToAdd;
-    		break;
-    	}
-    }                    
-	cloud.transition().style("font-size", function(d) {
-		if(d.text == genre){return d.size+sizeToAdd + "px";}
-		else{return d.size+"px";} 
+    if(genres.length == 0){
+		for (var i = 0; i<frequency_list.length;i++){
+			frequency_list[i].size = 30;
+			frequency_list[i].color = "#66c2a5"
+		}
+    }
+    else{        
+		for(var j = 0; j<genres.length;j++){
+			for (var i = 0; i<frequency_list.length;i++){
+				if(frequency_list[i].text == genres[j].genre){
+					sizeToAdd = (genres[j].totalPlayers / maxPlayers) * 15
+					frequency_list[i].size += sizeToAdd;
+					frequency_list[i].color = "#165dba"
+				}		
+			}
+		}
+    }
 		
-	})
+	cloud
+		.transition()
+		.style("font-size", function(d) {
+			return d.size+"px";
+		})
+		.style("fill", function(d) {
+			return d.color;
+		})
 }
 
 function draw(words) {

@@ -70,6 +70,7 @@ function dragula_setup() {
         vm.db.valueHasMutated();
         vm.selection.valueHasMutated();
         //call draw map with correct amount of arguments
+        updateWords()
         switch (vm.selection().length) {
         case 0:
             console.log("Comparing 0 games.");
